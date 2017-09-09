@@ -55,12 +55,11 @@ public class Scraping {
 
     private HtmlSubmitInput logSmart(WebClient webClient) throws IOException {
         try {
-            HtmlPage page1 = webClient.getPage("https://www.region9.telcel.com/smartdistribuidores/login_dep.aspx");
+            HtmlPage page1 = webClient.getPage("https://www.region9.telcel.com/smartdistribuidores");
 
-            HtmlForm form = page1.getFormByName("seguridad");
-            HtmlTextInput textFieldUsuario = form.getInputByName("LoginTB");
-            HtmlPasswordInput passFieldContrasenia = form.getInputByName("PassTB");
-            HtmlSubmitInput button = form.getInputByName("btnEntrar");
+            HtmlTextInput textFieldUsuario = page1.getHtmlElementById("txtUsuario");
+            HtmlPasswordInput passFieldContrasenia = page1.getHtmlElementById("txtContrasenia");
+            HtmlSubmitInput button = page1.getHtmlElementById("btnEntrar");
 
             textFieldUsuario.setValueAttribute("09VIDA68093000688");
             passFieldContrasenia.setValueAttribute("KAZA90304");
@@ -84,7 +83,7 @@ public class Scraping {
 
         int num = Oc.obtenerCamposN();
         try {
-            pageResultado = obtenerPaginaMenu(button, "Menu1_" + num, "Menu1_" + (num+1));
+            pageResultado = obtenerPaginaMenu(button, "lMenuSmart:submenu:189", "Menu1_" + (num+1));
             webClient.waitForBackgroundJavaScript(1000);
             textFieldCelular = pageResultado.getHtmlElementById("celular");
             textFieldCuenta = pageResultado.getHtmlElementById("cuenta");
@@ -181,19 +180,11 @@ public class Scraping {
                     HtmlSelect selectPlan = pageResultado.getHtmlElementById("planSeleccionado");
 
                     HtmlOption plan = null;
+                    cliente.setPlan(planActualInput.getValueAttribute());
                     for (HtmlOption option : selectPlan.getOptions()) {
-                        if (option.getText().contains(planActualInput.getValueAttribute())) {
-                            cliente.setPlan(modalidad + option.getText());
+                        if (option.getText().contains("MAX SIN LIMITE 1500 I") || option.getText().contains("MAX SIN LIMITE MIXTO 1500 I")) {
                             plan = option;
                             break;
-                        }
-                    }
-                    if(cliente.getPlan()==null){
-                        for (HtmlOption option : selectPlan.getOptions()) {
-                            if (option.getText().contains("MAX SIN LIMITE 1500 I") || option.getText().contains("MAX SIN LIMITE MIXTO 1500 I")) {
-                                plan = option;
-                                break;
-                            }
                         }
                     }
                     pageResultado = selectPlan.setSelectedAttribute(plan, true);
@@ -252,8 +243,8 @@ public class Scraping {
         HtmlPage pageResultado = null;
         try {
             pageResultado = button.click();
-            pageResultado = (HtmlPage) pageResultado.getElementById(m1).mouseOver();
-            pageResultado = pageResultado.getElementById(m2).click();
+            pageResultado = pageResultado.getElementById(m1).getElementsByTagName("a").get(0).click();
+            System.out.println(pageResultado.toString());
             repetir = false;
         } catch (NullPointerException | WrappedException | ClassCastException e) {
             repetir = true;
