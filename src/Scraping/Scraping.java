@@ -32,7 +32,7 @@ public class Scraping {
     private WebClient webClientSmart;
     private HtmlSubmitInput pageSmart;
     List<HtmlElement> elements = new ArrayList<>();
-    private String cuentaAnterior = "";
+    private String cuotaPasada = null;
     int contador =0;
     HtmlPage pageresultadoLimpia;
 
@@ -83,7 +83,7 @@ public class Scraping {
 
         int num = Oc.obtenerCamposN();
         try {
-            pageResultado = obtenerPaginaMenu(button, "lMenuSmart:submenu:189", "Menu1_" + (num+1));
+            pageResultado = obtenerPaginaMenu(button, "lMenuSmart:submenu:" + num, "Menu1_" + (num+1));
             webClient.waitForBackgroundJavaScript(1000);
             textFieldCelular = pageResultado.getHtmlElementById("celular");
             textFieldCuenta = pageResultado.getHtmlElementById("cuenta");
@@ -110,14 +110,15 @@ public class Scraping {
         textFieldCelular.setValueAttribute(cliente.getNumeroTelefonico());
         textFieldCuenta.setValueAttribute("12345678");
         HtmlPage pageResultado = buttonPuntos.click();
-        webClient.waitForBackgroundJavaScript(4000);
+        webClient.waitForBackgroundJavaScript(2000);
+        webClient.waitForBackgroundJavaScript(5000);
         if(pageresultadoLimpia!=null){
             pageResultado = pageresultadoLimpia;
             System.out.println("**Entra en pagina limpia**");
         }
         repetir = false;
         String error = "";
-        if(!pageResultado.asXml().contains("encontraron")){
+        if(pageResultado.asXml().contains("table")&&(!pageResultado.asXml().contains("encontraron"))){
             int dias;
             String modalidad;
 
@@ -128,12 +129,6 @@ public class Scraping {
                 HtmlTable table2 = (HtmlTable) table1.getRow(0).getCell(0).getElementsByTagName("table").get(0);
                 HtmlTable table3 = (HtmlTable) table1.getRow(0).getCell(2).getElementsByTagName("table").get(0);
 
-
-                if(cuentaAnterior.equals(table2.getRow(3).getCell(1).getTextContent())){
-                    throw new ElementNotFoundException("Cuenta","Cuenta","Repitiendo");
-                }
-
-                cuentaAnterior = table2.getRow(3).getCell(1).getTextContent();
 
                 cliente.setNombre(table2.getRow(0).getCell(1).getTextContent());
                 cliente.setCuenta(table2.getRow(3).getCell(1).getTextContent());
@@ -156,19 +151,14 @@ public class Scraping {
                 cliente.setPlazo(Long.parseLong(plazoForzosoHdn.getValueAttribute()));
                 cliente.setMensaje("S");
 
-                for(int i=0;i<7&&cliente.getPlan()==null;i++) {
+                for(int i=0;i<5&&cliente.getCuota()==null;i++) {
                     System.out.println("Buscando tramite...");
                     error = "buscarTramite";
                     HtmlSelect selectTramites = pageResultado.getHtmlElementById("tramite");
                     pageResultado = selectTramites.setSelectedAttribute(selectTramites.getOption(i), true);
-                    System.out.println("Buscando planes...");
-                    error = "buscarPlanes";
 
-                    HtmlRadioButtonInput input;
-                    System.out.println("Buscando tipoplanCADIV...");
-                    input = (HtmlRadioButtonInput) pageResultado.getElementById("tipoplanCADIV").getElementsByTagName("input").get(0);
-                    modalidad = "true".equalsIgnoreCase(input.getAttribute("checked")) ? "Normal-" : "Mixto-";
-                    cliente.setPlan(modalidad);
+                    webClient.waitForBackgroundJavaScript(2000);
+                    webClient.waitForBackgroundJavaScript(2000);
                     System.out.println("Buscando planes...");
                     error = "buscarPlanes";
                     pageResultado = pageResultado.getHtmlElementById("buscarPlanes").click();
@@ -188,20 +178,23 @@ public class Scraping {
                         }
                     }
                     pageResultado = selectPlan.setSelectedAttribute(plan, true);
+                    webClient.waitForBackgroundJavaScript(2000);
+                    webClient.waitForBackgroundJavaScript(2000);
+                    webClient.waitForBackgroundJavaScript(2000);
+                    webClient.waitForBackgroundJavaScript(2000);
+                    System.out.println("Buscando cuotaInput...");
+                    error="cuotaInput";
+                    HtmlTextInput cuota = pageResultado.getHtmlElementById("cuotaInput");
+                    if(cuota.getText().equals(cuotaPasada)){
+                        throw new ElementNotFoundException("Cuenta","Cuenta","Repitiendo");
+                    }
+                    cuotaPasada = cuota.getText();
+                    System.out.println("Buscando labelPuntosDisponibles...");
+                    error="labelPuntosDisponibles";
+                    cliente.setCuota(cuota!=null?cuota.getText():"0");
                 }
-                webClient.waitForBackgroundJavaScript(2000);
-                webClient.waitForBackgroundJavaScript(2000);
-                webClient.waitForBackgroundJavaScript(2000);
-                webClient.waitForBackgroundJavaScript(2000);
-                webClient.waitForBackgroundJavaScript(2000);
 
-                System.out.println("Buscando cuotaInput...");
-                error="cuotaInput";
-                HtmlTextInput cuota = pageResultado.getHtmlElementById("cuotaInput");
-                System.out.println("Buscando labelPuntosDisponibles...");
-                error="labelPuntosDisponibles";
                 HtmlTextInput puntosCA = pageResultado.getHtmlElementById("labelPuntosDisponibles");
-                cliente.setCuota(cuota!=null?cuota.getText():"0");
                 cliente.setPuntosCA(StringUtils.isEmpty(puntosCA.getText())?0:new Long(puntosCA.getText()));
                 System.out.println("Buscando financiamientoDiv...");
                 error="financiamientoDiv";
@@ -214,7 +207,6 @@ public class Scraping {
                         cliente.setCuotaFin(new Double(cuotaFin.getTextContent() != null ? cuotaFin.getTextContent() : "0.0"));
                     }
                 }
-                cuentaAnterior = cliente.getCuenta();
                 if (dias>90) {
                     cliente.setMensaje("N");
                 }
