@@ -50,6 +50,7 @@ public class Scraping {
         webClient.getOptions().setUseInsecureSSL(true);
         webClient.setAjaxController(new NicelyResynchronizingAjaxController());
         webClient.getOptions().setTimeout(999999999);
+        webClient.getOptions().setThrowExceptionOnFailingStatusCode(false);
         return webClient;
     }
 
