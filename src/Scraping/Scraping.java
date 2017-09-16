@@ -67,7 +67,7 @@ public class Scraping {
 
             return button;
         } catch (IOException | FailingHttpStatusCodeException e) {
-            LOG.log(Level.SEVERE, "logSmart: {0}", e.getMessage());
+            LOG.log(Level.SEVERE, "logSmart : {0}", e.getMessage());
         } catch (ElementNotFoundException e) {
             this.repetir = true;
             LOG.log(Level.SEVERE, "logSmart: {0}", e.getMessage());
