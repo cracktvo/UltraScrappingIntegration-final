@@ -7,9 +7,10 @@ package controlador;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 import java.util.StringTokenizer;
+
+import javafx.scene.control.TextArea;
 import modelo.entidades.Cliente;
 import Scraping.Scraping;
 import vista.rows.ClienteRow;
@@ -22,11 +23,23 @@ public class GeneradorControlador {
     
     Scraping scrap = new Scraping();
     
-    public List<Cliente> getClientesCollection(String cadena){
+    public List<Cliente> getClientesCollection(String cadena, boolean generar, TextArea textArea){
         List<Cliente> clientes = new ArrayList<>();
-        StringTokenizer st = new StringTokenizer(cadena,"\n");
-        while (st.hasMoreTokens()) {
-            clientes.add(new Cliente(st.nextToken()));   
+        if(!generar){
+            Long inicio = Long.parseLong(cadena);
+            for(int i = 0;i<2000;i++){
+                inicio++;
+                clientes.add(new Cliente("00000000000"));
+                clientes.add(new Cliente(inicio.toString()));
+            }
+            textArea.setText(textArea.getText()+"\n"+"El últmio número generado fue:\n\n\n\n\n\n\n"+inicio);
+        }else{
+            StringTokenizer st = new StringTokenizer(cadena,"\n");
+            while (st.hasMoreTokens()) {
+                String numero = st.nextToken();
+                clientes.add(new Cliente("00000000000"));
+                clientes.add(new Cliente(numero));
+            }
         }
         return clientes;
     }

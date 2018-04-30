@@ -5,10 +5,8 @@
  */
 package modelo.entidades;
 
-import jdk.nashorn.api.scripting.JSObject;
 import jentities.ClienteEntity;
 import org.apache.http.entity.StringEntity;
-import org.jasonjson.core.JsonObject;
 import org.json.JSONObject;
 import vista.rows.ClienteRow;
 
@@ -310,6 +308,7 @@ public class Cliente extends Entity{
         json.put("dCuotaFin", cuotaFin);
         StringEntity se = new StringEntity( json.toString());
         se.setContentType("application/json");
+        System.out.println(json.toString());
         return se;
     }
     

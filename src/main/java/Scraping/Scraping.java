@@ -5,11 +5,15 @@ import com.gargoylesoftware.htmlunit.html.*;
 import modelo.entidades.Cliente;
 import net.sourceforge.htmlunit.corejs.javascript.WrappedException;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.logging.LogFactory;
 import org.eclipse.jetty.util.StringUtil;
 import uploader.Oc;
 import uploader.Uploader;
 
+import javax.swing.*;
 import java.io.IOException;
+import java.math.BigInteger;
+import java.net.SocketTimeoutException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
@@ -36,12 +40,17 @@ public class Scraping {
     int contador =0;
     HtmlPage pageresultadoLimpia;
 
-
     public Scraping() {
     }
 
     private WebClient obtenerWC() {
+        LogFactory.getFactory().setAttribute("org.apache.commons.logging.Log", "org.apache.commons.logging.impl.NoOpLog");
+
+        java.util.logging.Logger.getLogger("com.gargoylesoftware").setLevel(Level.OFF);
+        java.util.logging.Logger.getLogger("org.apache.commons.httpclient").setLevel(Level.OFF);
         WebClient webClient = new WebClient(BrowserVersion.INTERNET_EXPLORER);
+        webClient.setJavaScriptTimeout(40000);
+        webClient.waitForBackgroundJavaScript(2000);
         webClient.getCookieManager().setCookiesEnabled(true);
         webClient.getOptions().setJavaScriptEnabled(true);
         webClient.getOptions().setPrintContentOnFailingStatusCode(true);
@@ -49,8 +58,9 @@ public class Scraping {
         webClient.getOptions().setThrowExceptionOnScriptError(false);
         webClient.getOptions().setUseInsecureSSL(true);
         webClient.setAjaxController(new NicelyResynchronizingAjaxController());
-        webClient.getOptions().setTimeout(999999999);
         webClient.getOptions().setThrowExceptionOnFailingStatusCode(false);
+        webClient.getOptions().setThrowExceptionOnScriptError(false);
+        webClient.getOptions().setTimeout(20000);
         return webClient;
     }
 
@@ -62,8 +72,8 @@ public class Scraping {
             HtmlPasswordInput passFieldContrasenia = page1.getHtmlElementById("txtContrasenia");
             HtmlSubmitInput button = page1.getHtmlElementById("btnEntrar");
 
-            textFieldUsuario.setValueAttribute("09VIDA68093000688");
-            passFieldContrasenia.setValueAttribute("KAZA90304");
+            textFieldUsuario.setValueAttribute("13DATS13010511711");
+            passFieldContrasenia.setValueAttribute("573262631");
 
             return button;
         } catch (IOException | FailingHttpStatusCodeException e) {
@@ -84,20 +94,32 @@ public class Scraping {
 
         int num = Oc.obtenerCamposN();
         try {
-            pageResultado = obtenerPaginaMenu(button, "lMenuSmart:submenu:" + num, "Menu1_" + (num+1));
+            LOG.log(Level.INFO, "obtenerCamposSmart: {0}", "Obtiene el submenu");
+            pageResultado = obtenerPaginaMenu(button,num, "Menu1_" + (num+1),webClient);
             webClient.waitForBackgroundJavaScript(1000);
+            LOG.log(Level.INFO, "obtenerCamposSmart: {0}", pageResultado.asXml());
+            LOG.log(Level.INFO, "obtenerCamposSmart: {0}", "Termina de obtener el submenu");
             textFieldCelular = pageResultado.getHtmlElementById("celular");
+            LOG.log(Level.INFO, "obtenerCamposSmart: {0}", "Obtuvo el campo celular");
             textFieldCuenta = pageResultado.getHtmlElementById("cuenta");
+            LOG.log(Level.INFO, "obtenerCamposSmart: {0}", "Obtuvo el campo cuenta");
             buttonPuntos = pageResultado.getHtmlElementById("buscarPuntos");
+            LOG.log(Level.INFO, "obtenerCamposSmart: {0}", "Obtuvo el boton buscarPuntos");
             elements.add(textFieldCelular);
             elements.add(textFieldCuenta);
             elements.add(buttonPuntos);
-            if (textFieldCelular == null || textFieldCuenta == null || buttonPuntos == null) {
-                repetir = true;
-            }
             repetir = false;
+            this.elements = elements;
+            if(StringUtils.isEmpty(obtenerClienteSinSubir(new Cliente("5540342107")).getNombre())){
+                LOG.log(Level.INFO, "obtenerCamposSmart: {0}", "Se manda a repetir por no encontrar al cliente.");
+                repetir = true;
+                webClient.close();
+                return elements;
+            }
+            LOG.log(Level.INFO, "obtenerCamposSmart: {0}", "Si obtuvo el primer muestreo");
         } catch (ElementNotFoundException |NullPointerException e) {
             repetir = true;
+            webClient.close();
             LOG.log(Level.SEVERE, "Sesion expiro: {0}", Arrays.toString(e.getStackTrace()));
             return elements;
         }
@@ -109,10 +131,9 @@ public class Scraping {
 
         LOG.log(Level.INFO, "Cliente: {0} {1} ", new Object[]{new Date(), cliente.getNumeroTelefonico()});
         textFieldCelular.setValueAttribute(cliente.getNumeroTelefonico());
-        textFieldCuenta.setValueAttribute("12345678");
+        textFieldCuenta.setValueAttribute("00");
         HtmlPage pageResultado = buttonPuntos.click();
         webClient.waitForBackgroundJavaScript(2000);
-        webClient.waitForBackgroundJavaScript(5000);
         if(pageresultadoLimpia!=null){
             pageResultado = pageresultadoLimpia;
             System.out.println("**Entra en pagina limpia**");
@@ -160,6 +181,7 @@ public class Scraping {
 
                     webClient.waitForBackgroundJavaScript(2000);
                     webClient.waitForBackgroundJavaScript(2000);
+
                     System.out.println("Buscando planes...");
                     error = "buscarPlanes";
                     pageResultado = pageResultado.getHtmlElementById("buscarPlanes").click();
@@ -173,7 +195,7 @@ public class Scraping {
                     HtmlOption plan = null;
                     cliente.setPlan(planActualInput.getValueAttribute());
                     for (HtmlOption option : selectPlan.getOptions()) {
-                        if (option.getText().contains("MAX SIN LIMITE 1500 I") || option.getText().contains("MAX SIN LIMITE MIXTO 1500 I")) {
+                        if (option.getText().contains("TELCEL")) {
                             plan = option;
                             break;
                         }
@@ -195,8 +217,8 @@ public class Scraping {
                     cliente.setCuota(cuota!=null?cuota.getText():"0");
                 }
 
-                HtmlTextInput puntosCA = pageResultado.getHtmlElementById("labelPuntosDisponibles");
-                cliente.setPuntosCA(StringUtils.isEmpty(puntosCA.getText())?0:new Long(puntosCA.getText()));
+                HtmlHiddenInput puntosCA = pageResultado.getHtmlElementById("puntosDisponibles");
+                cliente.setPuntosCA(StringUtils.isEmpty(puntosCA.getValueAttribute())?0:new Long(puntosCA.getValueAttribute()));
                 System.out.println("Buscando financiamientoDiv...");
                 error="financiamientoDiv";
                 HtmlDivision financiamientoDiv = pageResultado.getHtmlElementById("financiamientoDiv");
@@ -232,30 +254,71 @@ public class Scraping {
 
 
 
-    private HtmlPage obtenerPaginaMenu(HtmlSubmitInput button, String m1, String m2){
+    private HtmlPage obtenerPaginaMenu(HtmlSubmitInput button, int m1, String m2,WebClient wc){
         HtmlPage pageResultado = null;
+        HtmlPage resultado = null;
         try {
             pageResultado = button.click();
-            pageResultado = pageResultado.getElementById(m1).getElementsByTagName("a").get(0).click();
-            System.out.println(pageResultado.toString());
+            wc.waitForBackgroundJavaScript(5000);
+            LOG.log(Level.INFO, "obtenerCamposSmart: {0}", (pageResultado.asXml()));
+            resultado = pageResultado.getElementById("lMenuSmart:submenu:"+m1).getElementsByTagName("a").get(0).click();
+            wc.waitForBackgroundJavaScript(6000);
+            while(!((HtmlPage)resultado.getFrames().get(0).getEnclosedPage()).asXml().contains("celular")){
+                LOG.log(Level.INFO, "obtenerCamposSmart: {0}", ((HtmlPage)pageResultado.getFrames().get(0).getEnclosedPage()).asXml());
+                pageResultado = button.click();
+                wc.waitForBackgroundJavaScript(5000);
+                resultado = pageResultado.getElementById("lMenuSmart:submenu:"+m1).getElementsByTagName("a").get(0).click();
+                wc.waitForBackgroundJavaScript(6000);
+            }
             repetir = false;
-        } catch (NullPointerException | WrappedException | ClassCastException e) {
+        } catch (RuntimeException e) {
             repetir = true;
         } catch (IOException e) {
             LOG.log(Level.SEVERE, "Scrapping.obtenerPaginaMenu: {0}", e.getMessage());
         }
-        return pageResultado;
+        return resultado;
+    }
+
+
+    private void waitOutLoading(WebClient webClient,HtmlPage pageResultado) {
+        while(!((HtmlPage)pageResultado.getFrames().get(0).getEnclosedPage()).asXml().contains("celular")){
+            LOG.log(Level.INFO, "obtenerCamposSmart: {0}", ((HtmlPage)pageResultado.getFrames().get(0).getEnclosedPage()).asXml());
+            webClient.waitForBackgroundJavaScript(2000);
+        }
     }
 
     public void inicializar() throws IOException {
         repetir = true;
+        int intentos=0;
         while (repetir) {
             webClientSmart = obtenerWC();
             pageSmart = logSmart(webClientSmart);
             elements = obtenerCamposSmart(pageSmart, webClientSmart);
+            intentos++;
+            if(intentos>4){
+                System.exit(0);
+            }
         }
+
     }
-    public Cliente obtenerCliente(Cliente entity) throws IOException{
+    public Cliente  obtenerCliente(Cliente entity) throws IOException{
+        contador++;
+        repetir = true;
+            entity = cargarDatosSmart((HtmlTextInput) elements.get(0), (HtmlTextInput) elements.get(1), (HtmlSubmitInput) elements.get(2), webClientSmart, entity);
+            if((!repetir)&&entity.getNombre()!=null){
+                LOG.log(Level.INFO, "Cliente Final: {0} #: {1} ", new Object[]{entity.toString(), contador});
+            }
+            else{
+                entity.setMensaje("N");
+                LOG.log(Level.INFO, "Error en el cliente:{0} #: {1} ", new Object[]{entity.toString(), contador});
+            }
+            return entity;
+    }
+
+    public Cliente obtenerClienteSinSubir(Cliente entity) throws IOException{
+        if(elements.isEmpty()){
+            return new Cliente("");
+        }
         contador++;
         repetir = true;
         if (validarCampo(entity)) {
@@ -267,13 +330,13 @@ public class Scraping {
                 entity.setMensaje("N");
                 LOG.log(Level.INFO, "Error en el cliente:{0} #: {1} ", new Object[]{entity.toString(), contador});
             }
-            Uploader.insertarCliente(entity);
             return entity;
         } else {
             entity.setMensaje("Número telefónico debe tener 10 dígitos numéricos");
             return entity;
         }
     }
+
 
 
     public void finalizar(){
@@ -291,4 +354,15 @@ public class Scraping {
         }
         return true;
     }
+
+    private void makeWebClientWaitThroughJavaScriptLoadings(WebClient webClient) {
+        webClient.setAjaxController(new AjaxController(){
+            @Override
+            public boolean processSynchron(HtmlPage page, WebRequest request, boolean async)
+            {
+                return true;
+            }
+        });
+    }
+
 }

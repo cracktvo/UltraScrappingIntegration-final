@@ -5,19 +5,14 @@
  */
 package vista;
 
-import javafx.application.Platform;
 import javafx.concurrent.Task;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ProgressBar;
-import javafx.scene.control.ProgressIndicator;
-import javafx.scene.control.cell.ProgressBarTableCell;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
@@ -51,7 +46,7 @@ public class ProgresoPUController implements Initializable {
 
 
     public ProgresoPUController(VistaGeneral.ObtenerProcess task, Stage parent) throws Exception{
-        FXMLLoader loader = new FXMLLoader(Error.class.getResource("ProgresoPU.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("ProgresoPU.fxml"));
         loader.setController(this);
         Parent root = null;
         try {

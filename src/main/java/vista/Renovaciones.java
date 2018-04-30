@@ -26,7 +26,7 @@ public class Renovaciones extends Application {
     @Override
     public void start(Stage stage) throws Exception {
 
-        Parent root = FXMLLoader.load(getClass().getResource("VistaGeneral.fxml"));
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("VistaGeneral.fxml"));
         
         Scene scene = new Scene(root);
         

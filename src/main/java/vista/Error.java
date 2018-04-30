@@ -19,7 +19,7 @@ import javafx.stage.StageStyle;
 public class Error {
 
     public static void showError(String error) throws IOException {
-        FXMLLoader loader = new FXMLLoader(Error.class.getResource("ErrorPU.fxml"));
+        FXMLLoader loader = new FXMLLoader(Error.class.getClass().getClassLoader().getResource(("ErrorPU.fxml")));
         ErrorPUController controller = new ErrorPUController(error);
         loader.setController(controller);
         Parent root = loader.load();

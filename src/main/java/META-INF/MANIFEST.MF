@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Class-Path: itext-2.1.7.js6.jar json-20171018.jar neko-htmlunit-2.23.j
+ ar httpmime-4.5.2.jar websocket-client-9.2.18.v20160721.jar ecj-4.4.2
+ .jar xalan-2.7.2.jar commons-collections-3.2.2.jar commons-codec-1.10
+ .jar htmlunit-core-js-2.23.jar httpcore-4.4.9.jar cssparser-0.9.20.ja
+ r commons-logging-1.2.jar jetty-io-9.2.18.v20160721.jar sac-1.3.jar c
+ ommons-lang-2.6.jar commons-digester-2.1.jar commons-lang3-3.4.jar lu
+ cene-analyzers-common-4.5.1.jar castor-core-1.3.3.jar icu4j-57.1.jar 
+ lucene-queryparser-4.5.1.jar bcprov-jdk15on-1.52.jar websocket-common
+ -9.2.18.v20160721.jar websocket-api-9.2.18.v20160721.jar lucene-sandb
+ ox-4.5.1.jar jackson-core-2.1.4.jar jackson-annotations-2.1.4.jar sta
+ x-api-1.0-2.jar jasperreports-6.5.1.jar olap4j-0.9.7.309-JS-3.jar cor
+ e-3.2.1.jar stax-api-1.0.1.jar commons-beanutils-1.9.3.jar serializer
+ -2.7.2.jar xercesImpl-2.11.0.jar lucene-core-4.5.1.jar jcommon-1.0.23
+ .jar jakarta-regexp-1.4.jar castor-xml-1.3.3.jar htmlunit-2.23.jar st
+ ax-1.2.0.jar lucene-queries-4.5.1.jar xml-apis-1.4.01.jar commons-io-
+ 2.5.jar httpclient-4.5.5.jar javax.inject-1.jar jetty-util-9.2.18.v20
+ 160721.jar jackson-databind-2.1.4.jar jfreechart-1.0.19.jar
+Main-Class: vista.Renovaciones
+
