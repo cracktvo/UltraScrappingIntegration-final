@@ -17,5 +17,6 @@
       <TextArea fx:id="textArea" layoutX="23.0" layoutY="49.0" prefHeight="227.0" prefWidth="278.0" AnchorPane.bottomAnchor="86.0" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="32.0" AnchorPane.topAnchor="49.0" />
       <Button fx:id="button" layoutX="121.0" layoutY="315.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Generar" AnchorPane.bottomAnchor="16.0" AnchorPane.rightAnchor="139.0" />
       <CheckBox fx:id="checkBox" layoutX="23.0" layoutY="290.0" mnemonicParsing="false" text="No Generar" />
+      <CheckBox fx:id="numSearch" layoutX="148.0" layoutY="290.0" mnemonicParsing="false" text="Buscar por números" />
    </children>
 </AnchorPane>

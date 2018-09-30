@@ -1,31 +1,808 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="UltraScrappingIntegration:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a4838eb7-3c48-4e09-861a-4a64f4c8cac2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/GneracionMultiple.class" afterPath="$PROJECT_DIR$/build/classes/GneracionMultiple.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/Scraping/Scraping.class" afterPath="$PROJECT_DIR$/build/classes/Scraping/Scraping.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/controlador/GeneradorControlador.class" afterPath="$PROJECT_DIR$/build/classes/controlador/GeneradorControlador.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/jentities/ClienteEntity.class" afterPath="$PROJECT_DIR$/build/classes/jentities/ClienteEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/jentities/uploaderTest.class" afterPath="$PROJECT_DIR$/build/classes/jentities/uploaderTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/modelo/entidades/Cliente.class" afterPath="$PROJECT_DIR$/build/classes/modelo/entidades/Cliente.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/modelo/entidades/Entity.class" afterPath="$PROJECT_DIR$/build/classes/modelo/entidades/Entity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/reportes/ReporteDataSource.class" afterPath="$PROJECT_DIR$/build/classes/reportes/ReporteDataSource.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/reportes/ReportesFactory.class" afterPath="$PROJECT_DIR$/build/classes/reportes/ReportesFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/uploader/Oc.class" afterPath="$PROJECT_DIR$/build/classes/uploader/Oc.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/uploader/Uploader.class" afterPath="$PROJECT_DIR$/build/classes/uploader/Uploader.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/vista/Error.class" afterPath="$PROJECT_DIR$/build/classes/vista/Error.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/vista/ErrorPUController.class" afterPath="$PROJECT_DIR$/build/classes/vista/ErrorPUController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/vista/ProgresoPUController.class" afterPath="$PROJECT_DIR$/build/classes/vista/ProgresoPUController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/vista/Renovaciones.class" afterPath="$PROJECT_DIR$/build/classes/vista/Renovaciones.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/vista/VistaGeneral$1.class" afterPath="$PROJECT_DIR$/build/classes/vista/VistaGeneral$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/vista/VistaGeneral$ObtenerProcess.class" afterPath="$PROJECT_DIR$/build/classes/vista/VistaGeneral$ObtenerProcess.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/vista/VistaGeneral.class" afterPath="$PROJECT_DIR$/build/classes/vista/VistaGeneral.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/vista/rows/ClienteRow.class" afterPath="$PROJECT_DIR$/build/classes/vista/rows/ClienteRow.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/vista/rows/Row.class" afterPath="$PROJECT_DIR$/build/classes/vista/rows/Row.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UltraScrappingIntegration/Scraping/Scraping.class" afterPath="$PROJECT_DIR$/out/production/UltraScrappingIntegration/Scraping/Scraping.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Scraping/Scraping.java" afterPath="$PROJECT_DIR$/src/Scraping/Scraping.java" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/UltraScrappingIntegration_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_zxing_core_3_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_ibm_icu_icu4j_57_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_lowagie_itext_2_1_7_js6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_digester_commons_digester_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_regexp_jakarta_regexp_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_stream_stax_api_1_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_jasperreports_jasperreports_6_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_cssparser_cssparser_0_9_20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_2_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_core_js_2_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_htmlunit_neko_htmlunit_2_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_analyzers_common_4_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_core_4_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_queries_4_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_queryparser_4_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_sandbox_4_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_52.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_castor_castor_core_1_3_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_castor_castor_xml_1_3_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jdt_core_compiler_ecj_4_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_io_9_2_18_v20160721.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_util_9_2_18_v20160721.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_api_9_2_18_v20160721.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_client_9_2_18_v20160721.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_common_9_2_18_v20160721.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jfree_jcommon_1_0_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jfree_jfreechart_1_0_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_olap4j_olap4j_0_9_7_309_JS_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_w3c_css_sac_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xalan_serializer_2_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xalan_xalan_2_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xerces_xercesImpl_2_11_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_4_01.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/UltraScrappingIntegration.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/UltraScrappingIntegration.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/UltraScrappingIntegration.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/built-jar.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/GneracionMultiple.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/Scraping/Scraping.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/controlador/GeneradorControlador.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/jentities/ClienteEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/jentities/uploaderTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/modelo/entidades/Cliente.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/modelo/entidades/Entity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/reportes/Reporte.jasper" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/reportes/ReporteDataSource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/reportes/ReportesFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/uploader/Oc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/uploader/Uploader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/vista/Error.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/vista/ErrorPUController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/vista/ProgresoPUController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/vista/Renovaciones.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/vista/VistaGeneral$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/vista/VistaGeneral$ObtenerProcess.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/vista/VistaGeneral.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/vista/VistaGeneral.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/vista/rows/ClienteRow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/vista/rows/Row.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/README.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/UltraScrapping.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/FastInoset.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/asm-all-repackaged-2.1.76.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/cglib-2.1.76.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/com.lowagie.text-2.1.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/commons-beanutils-1.8.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/commons-beanutils-1.9.2-tests.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/commons-beanutils-1.9.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/commons-codec-1.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/commons-codec-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/commons-codec-1.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/commons-collections-3.2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/commons-collections-3.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/commons-collections4-4.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/commons-digester-2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/commons-httpclient-3.1-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/commons-httpclient-3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/commons-io-1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/commons-io-2.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/commons-lang-2.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/commons-lang3-3.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/commons-logging-1.0.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/commons-logging-1.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/commons-logging-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/cssparser-0.9.20.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/ezmorph-1.0.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/gmbal-api-only.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/guava-14.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/ha-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/hk2-api-2.1.76.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/hk2-locator-2.1.76.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/hk2-utils-2.1.76.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/htmlunit-2.23-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/htmlunit-2.23-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/htmlunit-2.23.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/htmlunit-core-js-2.23.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/httpclient-4.5.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/httpcore-4.4.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/httpmime-4.5.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/jason-0.1.1-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/jason-0.1.1-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/jason-0.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/jasperreports-6.3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/javax.annotation-api-1.2-b02.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/javax.annotation.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/javax.inject-1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/javax.inject-2.1.76.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/javax.ws.rs-api-2.0-rc2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/javax.ws.rs-api-2.0.1-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/javax.ws.rs-api-2.0.1-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/javax.ws.rs-api-2.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/jaxb-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/jaxb-impl.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/jaxb-xjc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/jaxws-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/jaxws-rt.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/jaxws-tools.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/jersey-client-2.0-m02-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/jersey-client-2.0-m02-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/jersey-client-2.0-m13-3-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/jersey-client-2.0-m13-3-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/jersey-client-2.0-m13-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/jersey-client-2.23.2-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/jersey-client-2.23.2-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/jersey-common-2.0-m13-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/jersey-media-json-jackson-2.0-m13-3-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/jersey-media-json-jackson-2.0-m13-3-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/jetty-io-9.2.18.v20160721.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/jetty-util-9.2.18.v20160721.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/json-20151123-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/json-20151123-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/json-20151123.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/jsr181-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/jsr305-1.3.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/mail.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/management-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/mimepull.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/neko-htmlunit-2.23.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/osgi-resource-locator-1.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/policy.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/saaj-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/saaj-impl.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/sac-1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/serializer-2.7.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/stax-ex.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/stax2-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/streambuffer.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/websocket-api-9.2.18.v20160721.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/websocket-client-9.2.18.v20160721.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/websocket-common-9.2.18.v20160721.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/woodstox-core-asl.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/xalan-2.7.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/xercesImpl-2.11.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/xml-apis-1.4.01.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Apache_Commons_API/commons-beanutils-1.9.2-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Apache_Commons_API/commons-beanutils-1.9.2-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Apache_Commons_API/commons-beanutils-1.9.2-test-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Apache_Commons_API/commons-beanutils-1.9.2-tests.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Apache_Commons_API/commons-beanutils-1.9.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Apache_Commons_API/commons-collections-3.2.2-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Apache_Commons_API/commons-collections-3.2.2-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Apache_Commons_API/commons-collections-3.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Apache_Commons_API/commons-collections4-4.1-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Apache_Commons_API/commons-collections4-4.1-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Apache_Commons_API/commons-collections4-4.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Apache_Commons_API/commons-digester-2.1-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Apache_Commons_API/commons-digester-2.1-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Apache_Commons_API/commons-digester-2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Apache_Commons_API/commons-io-1.4-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Apache_Commons_API/commons-io-1.4-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Apache_Commons_API/commons-io-1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Apache_Commons_API/commons-lang3-3.4-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Apache_Commons_API/commons-lang3-3.4-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Apache_Commons_API/commons-lang3-3.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Apache_Commons_API/commons-logging-1.2-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Apache_Commons_API/commons-logging-1.2-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Apache_Commons_API/commons-logging-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/CopyLibs/org-netbeans-modules-java-j2seproject-copylibstask.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/FastInoset.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/commons-codec-1.10-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/commons-codec-1.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/commons-io-2.5-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/commons-io-2.5-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/commons-io-2.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/commons-lang3-3.4-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/commons-lang3-3.4-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/commons-lang3-3.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/commons-logging-1.2-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/commons-logging-1.2-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/commons-logging-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/cssparser-0.9.20-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/cssparser-0.9.20-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/cssparser-0.9.20.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/htmlunit-2.23-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/htmlunit-2.23-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/htmlunit-2.23.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/htmlunit-core-js-2.23-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/htmlunit-core-js-2.23-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/htmlunit-core-js-2.23.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/httpclient-4.5.2-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/httpclient-4.5.2-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/httpclient-4.5.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/httpcore-4.4.4-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/httpcore-4.4.4-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/httpcore-4.4.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/httpmime-4.5.2-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/httpmime-4.5.2-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/httpmime-4.5.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/jetty-io-9.2.18.v20160721-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/jetty-io-9.2.18.v20160721-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/jetty-io-9.2.18.v20160721.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/jetty-util-9.2.18.v20160721-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/jetty-util-9.2.18.v20160721-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/jetty-util-9.2.18.v20160721.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/neko-htmlunit-2.23-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/neko-htmlunit-2.23-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/neko-htmlunit-2.23.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/sac-1.3-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/sac-1.3-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/sac-1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/serializer-2.7.2-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/serializer-2.7.2-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/serializer-2.7.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/websocket-api-9.2.18.v20160721-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/websocket-api-9.2.18.v20160721-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/websocket-api-9.2.18.v20160721.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/websocket-client-9.2.18.v20160721-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/websocket-client-9.2.18.v20160721-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/websocket-client-9.2.18.v20160721.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/websocket-common-9.2.18.v20160721-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/websocket-common-9.2.18.v20160721-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/websocket-common-9.2.18.v20160721.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/xalan-2.7.2-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/xalan-2.7.2-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/xalan-2.7.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/xercesImpl-2.11.0-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/xercesImpl-2.11.0-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/xercesImpl-2.11.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/xml-apis-1.4.01-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/xml-apis-1.4.01-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Htmlunit_2.23/xml-apis-1.4.01.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/JasperReports/barbecue-1.5-beta1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/JasperReports/batik-anim.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/JasperReports/batik-awt-util.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/JasperReports/batik-bridge.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/JasperReports/batik-css.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/JasperReports/batik-dom.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/JasperReports/batik-ext.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/JasperReports/batik-gvt.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/JasperReports/batik-parser.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/JasperReports/batik-script.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/JasperReports/batik-svg-dom.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/JasperReports/batik-svggen.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/JasperReports/batik-util.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/JasperReports/batik-xml.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/JasperReports/castor-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/JasperReports/commons-collections-3.2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/JasperReports/commons-logging-1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/JasperReports/jaxen-1.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/JasperReports/jcommon-1.0.15.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/JasperReports/jfreechart-1.0.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/JasperReports/jpa.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/JasperReports/png-encoder-1.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/JasperReports/xalan.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/JasperReports/xml-apis-ext.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/JasperReports/xml-apis.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Jasperreports_6.3.0/jasperreports-6.3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Jasperreports_6.3.0/jasperreports-fonts-6.3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Jasperreports_6.3.0/jasperreports-javaflow-6.3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/LowagieText_2.1.7/com.lowagie.text-2.1.7-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/LowagieText_2.1.7/com.lowagie.text-2.1.7-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/LowagieText_2.1.7/com.lowagie.text-2.1.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/asm-all-repackaged-2.1.76.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/cglib-2.1.76.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/com.lowagie.text-2.1.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/commons-beanutils-1.8.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/commons-beanutils-1.9.2-tests.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/commons-beanutils-1.9.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/commons-codec-1.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/commons-codec-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/commons-codec-1.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/commons-collections-3.2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/commons-collections-3.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/commons-collections4-4.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/commons-digester-2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/commons-httpclient-3.1-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/commons-httpclient-3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/commons-io-1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/commons-io-2.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/commons-lang-2.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/commons-lang3-3.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/commons-logging-1.0.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/commons-logging-1.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/commons-logging-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/cssparser-0.9.20.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ezmorph-1.0.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/gmbal-api-only.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/guava-14.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ha-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/hk2-api-2.1.76.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/hk2-locator-2.1.76.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/hk2-utils-2.1.76.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/htmlunit-2.23-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/htmlunit-2.23-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/htmlunit-2.23.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/htmlunit-core-js-2.23.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/httpclient-4.5.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/httpcore-4.4.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/httpmime-4.5.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jason-0.1.1-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jason-0.1.1-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jason-0.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jasperreports-6.3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.annotation-api-1.2-b02.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.annotation.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.inject-1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.inject-2.1.76.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.ws.rs-api-2.0-rc2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.ws.rs-api-2.0.1-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.ws.rs-api-2.0.1-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.ws.rs-api-2.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jaxb-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jaxb-impl.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jaxb-xjc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jaxws-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jaxws-rt.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jaxws-tools.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jersey-client-2.0-m02-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jersey-client-2.0-m02-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jersey-client-2.0-m13-3-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jersey-client-2.0-m13-3-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jersey-client-2.0-m13-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jersey-client-2.23.2-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jersey-client-2.23.2-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jersey-common-2.0-m13-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jersey-media-json-jackson-2.0-m13-3-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jersey-media-json-jackson-2.0-m13-3-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jetty-io-9.2.18.v20160721.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jetty-util-9.2.18.v20160721.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/json-20151123-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/json-20151123-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/json-20151123.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jsr181-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jsr305-1.3.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/mail.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/management-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/mimepull.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/nblibraries.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/neko-htmlunit-2.23.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/osgi-resource-locator-1.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/policy.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/saaj-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/saaj-impl.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sac-1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/serializer-2.7.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/stax-ex.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/stax2-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/streambuffer.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/websocket-api-9.2.18.v20160721.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/websocket-client-9.2.18.v20160721.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/websocket-common-9.2.18.v20160721.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woodstox-core-asl.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/xalan-2.7.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/xercesImpl-2.11.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/xml-apis-1.4.01.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/private/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/UltraScrapping_jar/UltraScrapping.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Apache_Commons_API/commons-beanutils-1.9.2-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Apache_Commons_API/commons-beanutils-1.9.2-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Apache_Commons_API/commons-beanutils-1.9.2-test-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Apache_Commons_API/commons-beanutils-1.9.2-tests.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Apache_Commons_API/commons-beanutils-1.9.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Apache_Commons_API/commons-collections-3.2.2-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Apache_Commons_API/commons-collections-3.2.2-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Apache_Commons_API/commons-collections-3.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Apache_Commons_API/commons-collections4-4.1-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Apache_Commons_API/commons-collections4-4.1-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Apache_Commons_API/commons-collections4-4.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Apache_Commons_API/commons-digester-2.1-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Apache_Commons_API/commons-digester-2.1-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Apache_Commons_API/commons-digester-2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Apache_Commons_API/commons-io-1.4-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Apache_Commons_API/commons-io-1.4-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Apache_Commons_API/commons-io-1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Apache_Commons_API/commons-lang3-3.4-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Apache_Commons_API/commons-lang3-3.4-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Apache_Commons_API/commons-lang3-3.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Apache_Commons_API/commons-logging-1.2-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Apache_Commons_API/commons-logging-1.2-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Apache_Commons_API/commons-logging-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/CopyLibs/org-netbeans-modules-java-j2seproject-copylibstask.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/FastInoset.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/GneracionMultiple.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/commons-codec-1.10-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/commons-codec-1.10-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/commons-codec-1.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/commons-io-2.5-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/commons-io-2.5-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/commons-io-2.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/commons-lang3-3.4-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/commons-lang3-3.4-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/commons-lang3-3.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/commons-logging-1.2-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/commons-logging-1.2-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/commons-logging-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/cssparser-0.9.20-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/cssparser-0.9.20-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/cssparser-0.9.20.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/htmlunit-2.23-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/htmlunit-2.23-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/htmlunit-2.23.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/htmlunit-core-js-2.23-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/htmlunit-core-js-2.23-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/htmlunit-core-js-2.23.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/httpclient-4.5.2-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/httpclient-4.5.2-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/httpclient-4.5.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/httpcore-4.4.4-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/httpcore-4.4.4-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/httpcore-4.4.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/httpmime-4.5.2-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/httpmime-4.5.2-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/httpmime-4.5.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/jetty-io-9.2.18.v20160721-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/jetty-io-9.2.18.v20160721-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/jetty-io-9.2.18.v20160721.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/jetty-util-9.2.18.v20160721-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/jetty-util-9.2.18.v20160721-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/jetty-util-9.2.18.v20160721.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/neko-htmlunit-2.23-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/neko-htmlunit-2.23-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/neko-htmlunit-2.23.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/sac-1.3-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/sac-1.3-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/sac-1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/serializer-2.7.2-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/serializer-2.7.2-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/serializer-2.7.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/websocket-api-9.2.18.v20160721-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/websocket-api-9.2.18.v20160721-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/websocket-api-9.2.18.v20160721.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/websocket-client-9.2.18.v20160721-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/websocket-client-9.2.18.v20160721-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/websocket-client-9.2.18.v20160721.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/websocket-common-9.2.18.v20160721-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/websocket-common-9.2.18.v20160721-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/websocket-common-9.2.18.v20160721.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/xalan-2.7.2-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/xalan-2.7.2-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/xalan-2.7.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/xercesImpl-2.11.0-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/xercesImpl-2.11.0-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/xercesImpl-2.11.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/xml-apis-1.4.01-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/xml-apis-1.4.01-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Htmlunit_2.23/xml-apis-1.4.01.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/JasperReports/barbecue-1.5-beta1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/JasperReports/batik-anim.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/JasperReports/batik-awt-util.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/JasperReports/batik-bridge.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/JasperReports/batik-css.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/JasperReports/batik-dom.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/JasperReports/batik-ext.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/JasperReports/batik-gvt.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/JasperReports/batik-parser.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/JasperReports/batik-script.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/JasperReports/batik-svg-dom.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/JasperReports/batik-svggen.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/JasperReports/batik-util.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/JasperReports/batik-xml.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/JasperReports/castor-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/JasperReports/commons-collections-3.2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/JasperReports/commons-logging-1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/JasperReports/jaxen-1.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/JasperReports/jcommon-1.0.15.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/JasperReports/jfreechart-1.0.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/JasperReports/jpa.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/JasperReports/png-encoder-1.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/JasperReports/xalan.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/JasperReports/xml-apis-ext.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/JasperReports/xml-apis.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Jasperreports_6.3.0/jasperreports-6.3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Jasperreports_6.3.0/jasperreports-fonts-6.3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Jasperreports_6.3.0/jasperreports-javaflow-6.3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/LowagieText_2.1.7/com.lowagie.text-2.1.7-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/LowagieText_2.1.7/com.lowagie.text-2.1.7-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/LowagieText_2.1.7/com.lowagie.text-2.1.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/README.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/Scraping/Scraping.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/UltraScrapping.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/asm-all-repackaged-2.1.76.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/built-jar.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/cglib-2.1.76.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/classes/jentities/clientes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/classes/reportes/Reporte.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/classes/reportes/Reporte.jasper" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/classes/reportes/Reporte.jrxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/classes/vista/ErrorPU.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/classes/vista/ProgresoPU.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/classes/vista/VistaGeneral.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/com.lowagie.text-2.1.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/commons-beanutils-1.8.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/commons-beanutils-1.9.2-tests.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/commons-beanutils-1.9.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/commons-codec-1.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/commons-codec-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/commons-codec-1.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/commons-collections-3.2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/commons-collections-3.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/commons-collections4-4.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/commons-digester-2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/commons-httpclient-3.1-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/commons-httpclient-3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/commons-io-1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/commons-io-2.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/commons-lang-2.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/commons-lang3-3.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/commons-logging-1.0.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/commons-logging-1.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/commons-logging-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/controlador/GeneradorControlador.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/copyright/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/cssparser-0.9.20.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/ezmorph-1.0.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/gmbal-api-only.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/guava-14.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/ha-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/hk2-api-2.1.76.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/hk2-locator-2.1.76.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/hk2-utils-2.1.76.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/htmlunit-2.23-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/htmlunit-2.23-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/htmlunit-2.23.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/htmlunit-core-js-2.23.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/httpclient-4.5.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/httpcore-4.4.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/httpmime-4.5.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/jason-0.1.1-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/jason-0.1.1-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/jason-0.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/jasperreports-6.3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/javax.annotation-api-1.2-b02.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/javax.annotation.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/javax.inject-1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/javax.inject-2.1.76.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/javax.ws.rs-api-2.0-rc2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/javax.ws.rs-api-2.0.1-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/javax.ws.rs-api-2.0.1-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/javax.ws.rs-api-2.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/jaxb-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/jaxb-impl.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/jaxb-xjc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/jaxws-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/jaxws-rt.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/jaxws-tools.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/jentities/ClienteEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/jentities/clientes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/jentities/uploaderTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/jersey-client-2.0-m02-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/jersey-client-2.0-m02-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/jersey-client-2.0-m13-3-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/jersey-client-2.0-m13-3-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/jersey-client-2.0-m13-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/jersey-client-2.23.2-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/jersey-client-2.23.2-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/jersey-common-2.0-m13-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/jersey-media-json-jackson-2.0-m13-3-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/jersey-media-json-jackson-2.0-m13-3-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/jetty-io-9.2.18.v20160721.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/jetty-util-9.2.18.v20160721.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/json-20151123-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/json-20151123-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/json-20151123.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/jsr181-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/jsr305-1.3.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/FastInoset.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/asm-all-repackaged-2.1.76.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/cglib-2.1.76.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/com.lowagie.text-2.1.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/commons-beanutils-1.8.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/commons-beanutils-1.9.2-tests.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/commons-beanutils-1.9.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/commons-codec-1.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/commons-codec-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/commons-codec-1.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/commons-collections-3.2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/commons-collections-3.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/commons-collections4-4.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/commons-digester-2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/commons-httpclient-3.1-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/commons-httpclient-3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/commons-io-1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/commons-io-2.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/commons-lang-2.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/commons-lang3-3.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/commons-logging-1.0.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/commons-logging-1.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/commons-logging-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/cssparser-0.9.20.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/ezmorph-1.0.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/gmbal-api-only.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/guava-14.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/ha-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/hk2-api-2.1.76.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/hk2-locator-2.1.76.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/hk2-utils-2.1.76.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/htmlunit-2.23-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/htmlunit-2.23-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/htmlunit-2.23.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/htmlunit-core-js-2.23.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/httpclient-4.5.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/httpcore-4.4.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/httpmime-4.5.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/jason-0.1.1-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/jason-0.1.1-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/jason-0.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/jasperreports-6.3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/javax.annotation-api-1.2-b02.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/javax.annotation.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/javax.inject-1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/javax.inject-2.1.76.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/javax.ws.rs-api-2.0-rc2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/javax.ws.rs-api-2.0.1-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/javax.ws.rs-api-2.0.1-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/javax.ws.rs-api-2.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/jaxb-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/jaxb-impl.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/jaxb-xjc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/jaxws-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/jaxws-rt.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/jaxws-tools.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/jersey-client-2.0-m02-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/jersey-client-2.0-m02-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/jersey-client-2.0-m13-3-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/jersey-client-2.0-m13-3-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/jersey-client-2.0-m13-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/jersey-client-2.23.2-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/jersey-client-2.23.2-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/jersey-common-2.0-m13-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/jersey-media-json-jackson-2.0-m13-3-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/jersey-media-json-jackson-2.0-m13-3-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/jetty-io-9.2.18.v20160721.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/jetty-util-9.2.18.v20160721.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/json-20151123-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/json-20151123-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/json-20151123.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/jsr181-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/jsr305-1.3.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/mail.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/management-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/mimepull.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/neko-htmlunit-2.23.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/osgi-resource-locator-1.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/policy.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/saaj-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/saaj-impl.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/sac-1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/serializer-2.7.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/stax-ex.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/stax2-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/streambuffer.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/websocket-api-9.2.18.v20160721.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/websocket-client-9.2.18.v20160721.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/websocket-common-9.2.18.v20160721.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/woodstox-core-asl.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/xalan-2.7.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/xercesImpl-2.11.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/lib/xml-apis-1.4.01.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/libraries/JAX_WS_Glassfish___JAX_WS_2_2_RI___Metro_1_X___JWSDP_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/libraries/commons_httpclient_3_1_source.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/libraries/commons_httpclient_commons_httpclient_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/libraries/lib.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/libraries/net_sf_json_lib_json_lib_2_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/libraries/org_glassfish_jersey_core_jersey_client_2_0_m13_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/libraries/org_glassfish_jersey_media_jersey_media_json_jackson_2_0_m13_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/libraries/org_jasonjson_jason_0_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/libraries/org_json_json_20151123.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/mail.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/management-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/mimepull.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/modelo/entidades/Cliente.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/modelo/entidades/Entity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/nblibraries.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/neko-htmlunit-2.23.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/osgi-resource-locator-1.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/policy.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/private/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/reportes/Reporte.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/reportes/Reporte.jasper" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/reportes/Reporte.jrxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/reportes/ReporteDataSource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/reportes/ReportesFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/saaj-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/saaj-impl.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/sac-1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/serializer-2.7.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/stax-ex.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/stax2-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/streambuffer.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/uploader/Oc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/uploader/Uploader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/vista/Error.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/vista/ErrorPU.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/vista/ErrorPUController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/vista/ProgresoPU.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/vista/ProgresoPUController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/vista/Renovaciones.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/vista/VistaGeneral$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/vista/VistaGeneral$ObtenerProcess.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/vista/VistaGeneral.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/vista/VistaGeneral.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/vista/rows/ClienteRow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/vista/rows/Row.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/websocket-api-9.2.18.v20160721.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/websocket-client-9.2.18.v20160721.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/websocket-common-9.2.18.v20160721.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/woodstox-core-asl.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/workspace.xml___jb_tmp___" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/xalan-2.7.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/xercesImpl-2.11.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrapping/xml-apis-1.4.01.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrappingIntegration/GneracionMultiple.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrappingIntegration/Scraping/Scraping.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrappingIntegration/controlador/GeneradorControlador.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrappingIntegration/jentities/ClienteEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrappingIntegration/jentities/clientes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrappingIntegration/jentities/uploaderTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrappingIntegration/modelo/entidades/Cliente.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrappingIntegration/modelo/entidades/Entity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrappingIntegration/reportes/Reporte.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrappingIntegration/reportes/Reporte.jasper" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrappingIntegration/reportes/Reporte.jrxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrappingIntegration/reportes/ReporteDataSource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrappingIntegration/reportes/ReportesFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrappingIntegration/uploader/Oc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrappingIntegration/uploader/Uploader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrappingIntegration/vista/Error.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrappingIntegration/vista/ErrorPU.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrappingIntegration/vista/ErrorPUController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrappingIntegration/vista/ProgresoPU.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrappingIntegration/vista/ProgresoPUController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrappingIntegration/vista/Renovaciones.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrappingIntegration/vista/VistaGeneral$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrappingIntegration/vista/VistaGeneral$ObtenerProcess.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrappingIntegration/vista/VistaGeneral.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrappingIntegration/vista/VistaGeneral.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrappingIntegration/vista/rows/ClienteRow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltraScrappingIntegration/vista/rows/Row.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GneracionMultiple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GneracionMultiple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Scraping/Scraping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Scraping/Scraping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controlador/GeneradorControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controlador/GeneradorControlador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/entidades/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/entidades/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uploader/Oc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uploader/Oc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vista/VistaGeneral.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vista/VistaGeneral.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/VistaGeneral.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/VistaGeneral.fxml" afterDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,110 +825,98 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Scraping.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Scraping/Scraping.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="Renovaciones.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/vista/Renovaciones.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-770">
-              <caret line="201" column="44" lean-forward="true" selection-start-line="201" selection-start-column="44" selection-end-line="201" selection-end-column="44" />
-              <folding />
+            <state relative-caret-position="204">
+              <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="String.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_131/src.zip!/java/lang/String.java">
+      <file leaf-file-name="GeneradorControlador.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controlador/GeneradorControlador.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-369">
-              <caret line="2131" column="19" lean-forward="false" selection-start-line="2131" selection-start-column="19" selection-end-line="2131" selection-end-column="19" />
+            <state relative-caret-position="578">
+              <caret line="46" column="56" selection-start-line="46" selection-start-column="46" selection-end-line="46" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VistaGeneral.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/vista/VistaGeneral.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="127" column="48" lean-forward="true" selection-start-line="127" selection-start-column="48" selection-end-line="127" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Task.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/javafx-src.zip!/javafx/concurrent/Task.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23613">
+              <caret line="1450" selection-start-line="1450" selection-end-line="1450" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CheckBox.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/javafx-src.zip!/javafx/scene/control/CheckBox.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1955">
+              <caret line="159" selection-start-line="159" selection-end-line="159" />
               <folding>
-                <element signature="e#82971#82972#0" expanded="true" />
-                <element signature="e#83020#83021#0" expanded="true" />
+                <element signature="e#5247#5248#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Scraping.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Scraping/Scraping.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="154" column="52" selection-start-line="154" selection-start-column="52" selection-end-line="154" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Oc.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/uploader/Oc.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/uploader/Oc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="34" column="69" lean-forward="false" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="69" />
-              <folding />
+            <state relative-caret-position="629">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DomNode.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/lib/htmlunit-2.23-sources.jar!/com/gargoylesoftware/htmlunit/html/DomNode.java">
+      <file leaf-file-name="Cliente.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/modelo/entidades/Cliente.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="1411" column="15" lean-forward="false" selection-start-line="1411" selection-start-column="15" selection-end-line="1411" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VistaGeneral.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/vista/VistaGeneral.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="829">
-              <caret line="117" column="41" lean-forward="true" selection-start-line="117" selection-start-column="41" selection-end-line="117" selection-end-column="41" />
+            <state relative-caret-position="1683">
+              <caret line="135" selection-start-line="135" selection-end-line="135" />
               <folding>
-                <element signature="e#0#8382#0" expanded="true" />
+                <element signature="e#1073#1074#0" expanded="true" />
+                <element signature="e#1109#1110#0" expanded="true" />
+                <element signature="e#3831#3832#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Renovaciones.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/vista/Renovaciones.java">
+      <file leaf-file-name="Entity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/modelo/entidades/Entity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="24" column="4" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
-              <folding>
-                <element signature="e#0#852#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProgresoPUController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/vista/ProgresoPUController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="32" column="13" lean-forward="false" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ErrorPUController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/vista/ErrorPUController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-74">
-              <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Error.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/vista/Error.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GneracionMultiple.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GneracionMultiple.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="12" column="49" lean-forward="false" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="49" />
-              <folding />
+            <state relative-caret-position="221">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
@@ -160,26 +925,68 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>region9.telcel</find>
-      <find>Cliente: {0} {1}</find>
-      <find>stringt</find>
-      <find>cargarDatosSmart</find>
+      <find>setpu</find>
+      <find>Cotiza</find>
+      <find>num</find>
+      <find>cotiza</find>
+      <find>click</find>
+      <find>celular</find>
+      <find>obtuvo</find>
+      <find>elements</find>
+      <find>Si obtuvo el primer muestreo</find>
+      <find>planSeleccionado</find>
+      <find>LOG.log(Level.INFO, &quot;obtenerCamposSmart: {0}&quot;, ((HtmlPage)pageResultado.getFrames().get(0).getEnclosedPage()).asXml())</find>
+      <find>obtenerCamposSmart</find>
+      <find>(HtmlPage)</find>
+      <find>buscarPlanes</find>
+      <find>planSele</find>
+      <find>checkBox</find>
+      <find>textFieldCuenta</find>
+      <find>WebClient</find>
+      <find>webClientSmart</find>
+      <find>5540342107</find>
+      <find>55</find>
+      <find>Se manda a repetir por no encontrar al cliente.</find>
+      <find>cuotaInput</find>
+      <find>92096786</find>
+      <find>clientes</find>
+      <find>9</find>
+      <find>0000000000</find>
+      <find>00000000000</find>
+      <find>Por alguna</find>
+      <find>puntosDisponibles</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GradleLocalSettings">
-    <option name="externalProjectsViewState">
-      <projects_view />
-    </option>
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/vista/Renovaciones.java" />
+        <option value="$PROJECT_DIR$/src/vista/VistaGeneral.fxml" />
+        <option value="$PROJECT_DIR$/src/vista/VistaGeneral.java" />
+        <option value="$PROJECT_DIR$/src/jentities/ClienteEntity.java" />
+        <option value="$PROJECT_DIR$/src/Scraping/Scraping.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jentities/uploaderTest.java" />
         <option value="$PROJECT_DIR$/src/uploader/Uploader.java" />
         <option value="$PROJECT_DIR$/src/uploader/Oc.java" />
-        <option value="$PROJECT_DIR$/src/Scraping/Scraping.java" />
+        <option value="$PROJECT_DIR$/src/modelo/entidades/Cliente.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vista/VistaGeneral.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/vista/Renovaciones.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vista/ProgresoPUController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vista/Error.java" />
+        <option value="$PROJECT_DIR$/src/controlador/GeneradorControlador.java" />
+        <option value="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/uploader/Uploader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/modelo/entidades/Cliente.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/VistaGeneral.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/GneracionMultiple.java" />
+        <option value="$PROJECT_DIR$/src/main/java/uploader/Oc.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controlador/GeneradorControlador.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vista/VistaGeneral.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Scraping/Scraping.java" />
       </list>
     </option>
   </component>
@@ -189,29 +996,64 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="UltraScrappingIntegration" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="UltraScrappingIntegration" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="UltraScrappingIntegration" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="UltraScrappingIntegration" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="assembly" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="UltraScrappingIntegration" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="jar" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="Scope" />
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -228,30 +1070,76 @@
               <item name="UltraScrappingIntegration" type="b2602c69:ProjectViewProjectNode" />
               <item name="UltraScrappingIntegration" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UltraScrappingIntegration" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UltraScrappingIntegration" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UltraScrappingIntegration" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UltraScrappingIntegration" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Scraping" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="UltraScrappingIntegration" type="b2602c69:ProjectViewProjectNode" />
               <item name="UltraScrappingIntegration" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="vista" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UltraScrappingIntegration" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UltraScrappingIntegration" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UltraScrappingIntegration" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UltraScrappingIntegration" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="ultrascrappingintegration" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AngularUdemy" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.25827205" />
+    <property name="project.structure.side.proportion" value="0.25892857" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Oscar\Workspace\UltraScrappingIntegration\src\main\java\vista" />
+      <recent name="D:\Oscar\Workspace\UltraScrappingIntegration\src\main\resources" />
+      <recent name="D:\Oscar\Workspace\UltraScrappingIntegration\target\classes" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Oscar\Workspace\UltraScrappingIntegration\src\main\resources" />
+      <recent name="D:\Oscar\Workspace\UltraScrappingIntegration\src\main\java\vista" />
+      <recent name="D:\Oscar\Workspace\UltraScrappingIntegration\src\main\java" />
+      <recent name="D:\Oscar\Workspace\UltraScrappingIntegration\src\main" />
+      <recent name="D:\Oscar\Workspace\UltraScrappingIntegration\src" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -266,57 +1154,23 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.Unnamed">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+    </configuration>
     <configuration name="GneracionMultiple" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="GneracionMultiple" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
       <module name="UltraScrappingIntegration" />
-      <envs />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
     <configuration name="Unnamed" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="vista.Renovaciones" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
       <module name="UltraScrappingIntegration" />
-      <envs />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" />
@@ -326,30 +1180,13 @@
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
-      <envs />
       <patterns />
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
-    </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
@@ -362,30 +1199,24 @@
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
       <option name="USE_DEFAULT_REPORTERS" value="false" />
       <option name="PROPERTIES_FILE" />
-      <envs />
       <properties />
       <listeners />
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Application.Unnamed" />
-      <item index="1" class="java.lang.String" itemvalue="Application.GneracionMultiple" />
+    <list>
+      <item itemvalue="Application.Unnamed" />
+      <item itemvalue="Application.GneracionMultiple" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.GneracionMultiple" />
+      <list>
+        <item itemvalue="Application.GneracionMultiple" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration>C:\Users\Oscar Rodriguez\AppData\Roaming\Subversion</configuration>
@@ -404,6 +1235,54 @@
       <workItem from="1503886502737" duration="3294000" />
       <workItem from="1503896842330" duration="224000" />
       <workItem from="1504984924762" duration="13466000" />
+      <workItem from="1505584809662" duration="2349000" />
+      <workItem from="1505603464638" duration="631000" />
+      <workItem from="1510635656653" duration="849000" />
+      <workItem from="1514704363728" duration="2877000" />
+      <workItem from="1515011790349" duration="333000" />
+      <workItem from="1515089658277" duration="1836000" />
+      <workItem from="1515171556184" duration="2173000" />
+      <workItem from="1515376265818" duration="1014000" />
+      <workItem from="1515439677374" duration="1230000" />
+      <workItem from="1515529959406" duration="309000" />
+      <workItem from="1517101350376" duration="4113000" />
+      <workItem from="1517158499234" duration="3767000" />
+      <workItem from="1517162712421" duration="9503000" />
+      <workItem from="1517192649567" duration="1622000" />
+      <workItem from="1517194371976" duration="9781000" />
+      <workItem from="1517241372396" duration="12813000" />
+      <workItem from="1517275420735" duration="24718000" />
+      <workItem from="1517447748029" duration="660000" />
+      <workItem from="1519501284530" duration="11352000" />
+      <workItem from="1519521120031" duration="176000" />
+      <workItem from="1519521466758" duration="24609000" />
+      <workItem from="1519658965023" duration="1396000" />
+      <workItem from="1519762301277" duration="931000" />
+      <workItem from="1519842669923" duration="3652000" />
+      <workItem from="1520952950850" duration="1185000" />
+      <workItem from="1522173202778" duration="2073000" />
+      <workItem from="1522878820770" duration="233000" />
+      <workItem from="1522882018599" duration="5785000" />
+      <workItem from="1523038302654" duration="594000" />
+      <workItem from="1523311388069" duration="8136000" />
+      <workItem from="1523381997226" duration="3288000" />
+      <workItem from="1523638377133" duration="795000" />
+      <workItem from="1524788488451" duration="422000" />
+      <workItem from="1524845607673" duration="3007000" />
+      <workItem from="1525042321484" duration="6052000" />
+      <workItem from="1525102182171" duration="318000" />
+      <workItem from="1525103114057" duration="2261000" />
+      <workItem from="1525710992706" duration="2059000" />
+      <workItem from="1527265133436" duration="1730000" />
+      <workItem from="1527544959525" duration="33000" />
+      <workItem from="1532892902541" duration="1553000" />
+      <workItem from="1536529876375" duration="4514000" />
+      <workItem from="1536550184173" duration="6641000" />
+      <workItem from="1536710190215" duration="1312000" />
+      <workItem from="1537015645842" duration="1394000" />
+      <workItem from="1537017482416" duration="25475000" />
+      <workItem from="1537838864960" duration="2098000" />
+      <workItem from="1538347864801" duration="980000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1504989947963</created>
@@ -412,45 +1291,106 @@
       <option name="project" value="LOCAL" />
       <updated>1504989947963</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary=".">
+      <created>1525103416022</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1525103416022</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25180000" />
+    <option name="totallyTimeSpent" value="229812000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2228261" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26918977" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="TODO" order="9" weight="0.32915717" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32478634" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info id="Image Layers" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.5021482" side_tool="true" weight="0.47722095" />
+      <window_info anchor="right" id="Maven Projects" order="4" visible="true" weight="0.14966443" />
+      <window_info anchor="bottom" id="Database Changes" order="18" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.32905984" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49785176" visible="true" weight="0.35470086" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.32621083" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="4" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18590604" />
+      <window_info anchor="bottom" id="Problems" order="15" weight="0.32915717" />
+      <window_info anchor="right" id="Database" order="5" weight="0.32975295" />
+      <window_info anchor="bottom" id="SonarQube" order="16" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" x="85" y="59" width="1366" height="705" id="Debug" order="3" weight="0.46723646" />
+      <window_info anchor="bottom" id="Debug Remote Spark Job in Cluster" order="7" />
+      <window_info anchor="bottom" id="Remote Spark Job in Cluster" order="8" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="SonarLint" order="17" />
+      <window_info id="Azure Explorer" order="3" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Azure Activity Log" order="10" />
+      <window_info anchor="bottom" id="HDInsight Spark Submission" order="11" weight="0.32915717" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32905984" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Designer" order="4" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Debug Remote Spark Job in Cluster" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49785176" visible="true" weight="0.35470086" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.32621083" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="bottom" id="Remote Spark Job in Cluster" order="8" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.5021482" side_tool="true" weight="0.47722095" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32478634" />
+      <window_info anchor="bottom" id="TODO" order="9" weight="0.32915717" />
+      <window_info anchor="bottom" id="SonarLint" order="17" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Problems" order="15" weight="0.32915717" />
+      <window_info anchor="bottom" id="Database Changes" order="18" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.32905984" />
+      <window_info anchor="right" id="Maven Projects" order="4" weight="0.17114094" />
+      <window_info anchor="bottom" id="HDInsight Spark Submission" order="11" weight="0.32915717" />
+      <window_info id="Azure Explorer" order="3" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.20604026" />
+      <window_info anchor="right" id="Database" order="5" weight="0.32975295" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Image Layers" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="bottom" id="SonarQube" order="16" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32905984" />
+      <window_info anchor="bottom" id="Azure Activity Log" order="10" />
+      <window_info active="true" anchor="bottom" x="1920" y="23" width="1366" height="705" id="Debug" order="3" type="WINDOWED" visible="true" weight="0.46723646" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -464,486 +1404,239 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="28" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <default-breakpoints>
+        <breakpoint enabled="true" type="javascript-exception">
+          <properties />
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="174" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
-        <watch expression="divConsultaPuntos" />
-        <watch expression="divConsultaPuntos.getElementsByTagName(&quot;table&quot;).get(0)" />
-        <watch expression="divConsultaPuntos.getElementsByTagName(&quot;table&quot;)" />
-        <watch expression="divConsultaPuntos.getHtmlElementDescendants().iterator()" language="JAVA" />
         <watch expression="pageResultado.asXml()" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>pageResultado.asXml()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>pageResultado.asText()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>buttonPuntos.asText()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/controlador/GeneradorControlador.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="26" column="8" lean-forward="false" selection-start-line="26" selection-start-column="8" selection-end-line="29" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/java/modelo/entidades/Cliente.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/jentities/ClienteEntity.java" />
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_131/src.zip!/java/lang/String.java" />
+    <entry file="jar://$PROJECT_DIR$/lib/htmlunit-2.23-sources.jar!/com/gargoylesoftware/htmlunit/html/DomNode.java" />
+    <entry file="jar://$PROJECT_DIR$/lib/httpclient-4.5.2.jar!/org/apache/http/auth/UsernamePasswordCredentials.class" />
+    <entry file="jar://D:/Apps/Program Files/Java/jdk1.8.0_144/src.zip!/java/net/URLClassLoader.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/reportes/Reporte.html" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/reportes/ReportesFactory.java" />
+    <entry file="jar://D:/Apps/Program Files/Java/jdk1.8.0_144/javafx-src.zip!/com/sun/javafx/application/LauncherImpl.java" />
+    <entry file="jar://D:/Apps/Program Files/Java/jdk1.8.0_144/javafx-src.zip!/javafx/application/Application.java" />
+    <entry file="jar://D:/Apps/Program Files/Java/jdk1.8.0_144/src.zip!/java/lang/String.java" />
+    <entry file="jar://D:/Apps/Program Files/Java/jdk1.8.0_144/javafx-src.zip!/javafx/scene/control/CheckBox.java" />
+    <entry file="jar://D:/Apps/Program Files/Java/jdk1.8.0_144/src.zip!/java/lang/Integer.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/jentities/clientes" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/reportes/ReporteDataSource.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/net/sourceforge/htmlunit/htmlunit/2.29/htmlunit-2.29.jar!/com/gargoylesoftware/htmlunit/html/HtmlPage.class" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/VistaGeneral.fxml" />
+    <entry file="file://$PROJECT_DIR$/src/GneracionMultiple.java" />
+    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/vista/Renovaciones.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#852#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GneracionMultiple.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/vista/VistaGeneral.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/vista/VistaGeneral.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="54" column="8" lean-forward="false" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#8382#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modelo/entidades/Cliente.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="777">
-          <caret line="45" column="11" lean-forward="false" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#8612#0" expanded="false" />
-            <element signature="e#1164#1165#0" expanded="false" />
-            <element signature="e#1220#1221#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jentities/ClienteEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/uploader/Uploader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Scraping/Scraping.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4893">
-          <caret line="250" column="69" lean-forward="false" selection-start-line="250" selection-start-column="69" selection-end-line="250" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/vista/Renovaciones.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#852#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GneracionMultiple.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/vista/VistaGeneral.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/vista/VistaGeneral.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="54" column="8" lean-forward="false" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#8382#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modelo/entidades/Cliente.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="45" column="11" lean-forward="false" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#8612#0" expanded="false" />
-            <element signature="e#1164#1165#0" expanded="false" />
-            <element signature="e#1220#1221#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jentities/ClienteEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controlador/GeneradorControlador.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="26" column="8" lean-forward="true" selection-start-line="26" selection-start-column="8" selection-end-line="29" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Scraping/Scraping.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/vista/Renovaciones.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#852#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GneracionMultiple.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/vista/VistaGeneral.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/vista/VistaGeneral.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="54" column="8" lean-forward="false" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#8382#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modelo/entidades/Cliente.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="34" column="26" lean-forward="false" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#8612#0" expanded="false" />
-            <element signature="e#1164#1165#0" expanded="false" />
-            <element signature="e#1220#1221#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jentities/ClienteEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Scraping/Scraping.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1513">
-          <caret line="106" column="27" lean-forward="false" selection-start-line="106" selection-start-column="27" selection-end-line="106" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GneracionMultiple.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/vista/VistaGeneral.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/vista/VistaGeneral.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="54" column="8" lean-forward="false" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#8382#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modelo/entidades/Cliente.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="34" column="26" lean-forward="false" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#8612#0" expanded="false" />
-            <element signature="e#1164#1165#0" expanded="false" />
-            <element signature="e#1220#1221#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jentities/ClienteEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/vista/Renovaciones.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#852#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Scraping/Scraping.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/vista/VistaGeneral.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#8382#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modelo/entidades/Cliente.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="34" column="26" lean-forward="false" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#8612#0" expanded="false" />
-            <element signature="e#1164#1165#0" expanded="false" />
-            <element signature="e#1220#1221#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jentities/ClienteEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modelo/entidades/Entity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jentities/ClienteEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jentities/clientes">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/vista/VistaGeneral.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modelo/entidades/Cliente.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="45" column="11" lean-forward="false" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#8612#0" expanded="false" />
-            <element signature="e#1164#1165#0" expanded="false" />
-            <element signature="e#1220#1221#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controlador/GeneradorControlador.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="26" column="8" lean-forward="false" selection-start-line="26" selection-start-column="8" selection-end-line="29" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/uploader/Uploader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="24" column="3" lean-forward="false" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/htmlunit-2.23-sources.jar!/com/gargoylesoftware/htmlunit/html/DomNode.java">
+    <entry file="file://$PROJECT_DIR$/src/uploader/Uploader.java" />
+    <entry file="file://$PROJECT_DIR$/src/uploader/Oc.java" />
+    <entry file="file://$PROJECT_DIR$/src/modelo/entidades/Cliente.java" />
+    <entry file="file://$PROJECT_DIR$/src/vista/VistaGeneral.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar!/org/apache/commons/lang3/StringUtils.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
-          <caret line="1411" column="15" lean-forward="false" selection-start-line="1411" selection-start-column="15" selection-end-line="1411" selection-end-column="15" />
-          <folding />
+          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/uploader/Oc.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4-sources.jar!/org/apache/commons/lang3/StringUtils.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Scraping/Scraping.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="34" column="69" lean-forward="false" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GneracionMultiple.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="49" lean-forward="false" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_131/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-369">
-          <caret line="2131" column="19" lean-forward="false" selection-start-line="2131" selection-start-column="19" selection-end-line="2131" selection-end-column="19" />
+        <state relative-caret-position="128">
+          <caret line="135" column="70" selection-start-line="135" selection-start-column="70" selection-end-line="135" selection-end-column="70" />
           <folding>
-            <element signature="e#82971#82972#0" expanded="true" />
-            <element signature="e#83020#83021#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/vista/ProgresoPUController.java">
+    <entry file="file://$PROJECT_DIR$/target/classes/META-INF/MANIFEST.MF" />
+    <entry file="file://$PROJECT_DIR$/src/main/META-INF/MANIFEST.MF" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/ErrorPU.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vista/Error.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="32" column="13" lean-forward="false" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="84">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/vista/ErrorPUController.java">
+    <entry file="jar://D:/Apps/Program Files/Java/jdk1.8.0_144/javafx-src.zip!/javafx/fxml/FXMLLoader.java" />
+    <entry file="file://$PROJECT_DIR$/src/controlador/GeneradorControlador.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-74">
-          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="42">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/vista/Error.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/vista/Renovaciones.java">
+    <entry file="jar://D:/Apps/Program Files/Java/jdk1.8.0_144/javafx-src.zip!/javafx/concurrent/Task.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/jentities/ClienteEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
-          <caret line="24" column="4" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jentities/uploaderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uploader/Uploader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="36" column="12" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="36" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vista/ErrorPUController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GneracionMultiple.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vista/ProgresoPUController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="47" column="11" selection-start-line="47" selection-start-column="11" selection-end-line="47" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uploader/Oc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/javafx-src.zip!/javafx/concurrent/Task.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23613">
+          <caret line="1450" selection-start-line="1450" selection-end-line="1450" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/modelo/entidades/Entity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vista/Renovaciones.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
           <folding>
-            <element signature="e#0#852#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/vista/VistaGeneral.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/javafx-src.zip!/javafx/scene/control/CheckBox.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="829">
-          <caret line="117" column="41" lean-forward="true" selection-start-line="117" selection-start-column="41" selection-end-line="117" selection-end-column="41" />
+        <state relative-caret-position="1955">
+          <caret line="159" selection-start-line="159" selection-end-line="159" />
           <folding>
-            <element signature="e#0#8382#0" expanded="true" />
+            <element signature="e#5247#5248#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Scraping/Scraping.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/modelo/entidades/Cliente.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-770">
-          <caret line="201" column="44" lean-forward="true" selection-start-line="201" selection-start-column="44" selection-end-line="201" selection-end-column="44" />
-          <folding />
+        <state relative-caret-position="1683">
+          <caret line="135" selection-start-line="135" selection-end-line="135" />
+          <folding>
+            <element signature="e#1073#1074#0" expanded="true" />
+            <element signature="e#1109#1110#0" expanded="true" />
+            <element signature="e#3831#3832#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/VistaGeneral.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="9" column="52" lean-forward="true" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controlador/GeneradorControlador.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="46" column="56" selection-start-line="46" selection-start-column="46" selection-end-line="46" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vista/VistaGeneral.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="127" column="48" lean-forward="true" selection-start-line="127" selection-start-column="48" selection-end-line="127" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Scraping/Scraping.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="154" column="52" selection-start-line="154" selection-start-column="52" selection-end-line="154" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -952,12 +1645,19 @@
     <states>
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
-          <artifact-editor />
-          <last-edited>UltraScrappingIntegration</last-edited>
+          <artifact-editor>
+            <show-content>
+              <type id="artifact" />
+              <type id="library" />
+              <type id="javaee-facet-resources" />
+              <type id="jpa-descriptors" />
+            </show-content>
+          </artifact-editor>
+          <last-edited>UltraScrappingIntegration:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.25827205" />
+                <option value="0.25892857" />
                 <option value="0.5" />
               </list>
             </option>
@@ -1027,7 +1727,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>lib</last-edited>
+          <last-edited>Maven: com.fasterxml.jackson.core:jackson-annotations:2.1.4</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1038,5 +1738,9 @@
         </settings>
       </state>
     </states>
+  </component>
+  <component name="mavenExecuteGoalHistory">
+    <option value="$PROJECT_DIR$" />
+    <option value="clean install" />
   </component>
 </project>

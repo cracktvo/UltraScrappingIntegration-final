@@ -41,8 +41,12 @@ public class Cliente extends Entity{
     public Cliente() {
     }
 
-    public Cliente(String numeroTelefonico) {
-        this.numeroTelefonico = numeroTelefonico;
+    public Cliente(String cuenta) {
+        this.cuenta = cuenta;
+    }
+    public Cliente(String num,String cuenta) {
+        this.numeroTelefonico = num;
+        this.cuenta = cuenta;
     }
 
     public Cliente(String numeroTelefonico, String mesesFaltantes, String cuota, String mensaje, String nombre, String plan, String cuenta, String fechaFacturacion, Long plazo, Long puntosCA, Double cuotaFin) {

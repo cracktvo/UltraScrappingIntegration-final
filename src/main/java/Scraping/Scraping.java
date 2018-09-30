@@ -48,7 +48,7 @@ public class Scraping {
 
         java.util.logging.Logger.getLogger("com.gargoylesoftware").setLevel(Level.OFF);
         java.util.logging.Logger.getLogger("org.apache.commons.httpclient").setLevel(Level.OFF);
-        WebClient webClient = new WebClient(BrowserVersion.INTERNET_EXPLORER);
+        WebClient webClient = new WebClient(BrowserVersion.EDGE);
         webClient.setJavaScriptTimeout(40000);
         webClient.waitForBackgroundJavaScript(2000);
         webClient.getCookieManager().setCookiesEnabled(true);
@@ -72,8 +72,8 @@ public class Scraping {
             HtmlPasswordInput passFieldContrasenia = page1.getHtmlElementById("txtContrasenia");
             HtmlSubmitInput button = page1.getHtmlElementById("btnEntrar");
 
-            textFieldUsuario.setValueAttribute("13DATS13010511711");
-            passFieldContrasenia.setValueAttribute("573262631");
+            textFieldUsuario.setValueAttribute(Oc.getSmartUser());
+            passFieldContrasenia.setValueAttribute(Oc.getSmartPass());
 
             return button;
         } catch (IOException | FailingHttpStatusCodeException e) {
@@ -90,9 +90,10 @@ public class Scraping {
         HtmlPage pageResultado;
         HtmlTextInput textFieldCelular;
         HtmlTextInput textFieldCuenta;
+        HtmlTextInput textFieldRFC;
         HtmlSubmitInput buttonPuntos;
 
-        int num = Oc.obtenerCamposN();
+        int num = Oc.getNumCotiCC();
         try {
             LOG.log(Level.INFO, "obtenerCamposSmart: {0}", "Obtiene el submenu");
             pageResultado = obtenerPaginaMenu(button,num, "Menu1_" + (num+1),webClient);
@@ -103,14 +104,17 @@ public class Scraping {
             LOG.log(Level.INFO, "obtenerCamposSmart: {0}", "Obtuvo el campo celular");
             textFieldCuenta = pageResultado.getHtmlElementById("cuenta");
             LOG.log(Level.INFO, "obtenerCamposSmart: {0}", "Obtuvo el campo cuenta");
+            textFieldRFC = pageResultado.getHtmlElementById("rfc");
+            LOG.log(Level.INFO, "obtenerCamposSmart: {0}", "Obtuvo el campo RFC");
             buttonPuntos = pageResultado.getHtmlElementById("buscarPuntos");
             LOG.log(Level.INFO, "obtenerCamposSmart: {0}", "Obtuvo el boton buscarPuntos");
             elements.add(textFieldCelular);
             elements.add(textFieldCuenta);
+            elements.add(textFieldRFC);
             elements.add(buttonPuntos);
             repetir = false;
             this.elements = elements;
-            if(StringUtils.isEmpty(obtenerClienteSinSubir(new Cliente("5540342107")).getNombre())){
+            if(StringUtils.isEmpty(obtenerClienteSinSubir(new Cliente("92096786")).getNombre())){
                 LOG.log(Level.INFO, "obtenerCamposSmart: {0}", "Se manda a repetir por no encontrar al cliente.");
                 repetir = true;
                 webClient.close();
@@ -126,12 +130,27 @@ public class Scraping {
         return elements;
     }
 
-    private Cliente cargarDatosSmart(HtmlTextInput textFieldCelular, HtmlTextInput textFieldCuenta, HtmlSubmitInput buttonPuntos, WebClient webClient, Cliente cliente) throws IOException {
+    private Cliente cargarDatosSmart(HtmlTextInput textFieldCelular, HtmlTextInput textFieldCuenta, HtmlTextInput textFieldRFC, HtmlSubmitInput buttonPuntos, WebClient webClient, Cliente cliente,boolean numSearch) throws IOException {
 
 
-        LOG.log(Level.INFO, "Cliente: {0} {1} ", new Object[]{new Date(), cliente.getNumeroTelefonico()});
-        textFieldCelular.setValueAttribute(cliente.getNumeroTelefonico());
-        textFieldCuenta.setValueAttribute("00");
+
+        if(numSearch){
+            LOG.log(Level.INFO, "Cliente: {0} {1} ", new Object[]{new Date(), cliente});
+            textFieldCelular.setValueAttribute(cliente.getNumeroTelefonico());
+        }else{
+            LOG.log(Level.INFO, "Cliente: {0} {1} ", new Object[]{new Date(), cliente});
+            if(cliente.getCuenta()!=null&&cliente.getCuenta().equals("0000000000")){
+                textFieldCelular.setValueAttribute("0000000000");
+                textFieldCuenta.setValueAttribute("");
+            }else if(cliente.getCuenta()==null){
+                textFieldCuenta.setValueAttribute("0");
+            }else{
+                textFieldCuenta.setValueAttribute(cliente.getCuenta());
+                textFieldCelular.setValueAttribute("");
+            }
+
+        }
+        textFieldRFC.setValueAttribute("0");
         HtmlPage pageResultado = buttonPuntos.click();
         webClient.waitForBackgroundJavaScript(2000);
         if(pageresultadoLimpia!=null){
@@ -153,13 +172,12 @@ public class Scraping {
 
 
                 cliente.setNombre(table2.getRow(0).getCell(1).getTextContent());
+                cliente.setNumeroTelefonico(table2.getRow(1).getCell(1).getTextContent());
                 cliente.setCuenta(table2.getRow(3).getCell(1).getTextContent());
                 cliente.setFechaFacturacion(table3.getRow(3).getCell(1).getTextContent());
                 System.out.println("Buscando diasRenovacion...");
                 error="diasRenovacion";
                 HtmlHiddenInput diasRenovacion = pageResultado.getHtmlElementById("diasRenovacion");
-                System.out.println("Buscando plazoForzosoHdn...");
-                error="plazoForzosoHdn";
                 HtmlHiddenInput plazoForzosoHdn = pageResultado.getHtmlElementById("plazoForzosoHdn");
                 System.out.println("Buscando planActual...");
                 error="planActual";
@@ -172,6 +190,11 @@ public class Scraping {
                 cliente.setMesesFaltantes(Integer.toString(dias));
                 cliente.setPlazo(Long.parseLong(plazoForzosoHdn.getValueAttribute()));
                 cliente.setMensaje("S");
+
+                System.out.println("Buscando puntos...");
+                HtmlHiddenInput puntosCA = pageResultado.getHtmlElementById("puntosDisponibles");
+                cliente.setPuntosCA(StringUtils.isEmpty(puntosCA.getValueAttribute())?0:new Long(puntosCA.getValueAttribute()));
+                error="puntosDisponibles";
 
                 for(int i=0;i<5&&cliente.getCuota()==null;i++) {
                     System.out.println("Buscando tramite...");
@@ -202,9 +225,6 @@ public class Scraping {
                     }
                     pageResultado = selectPlan.setSelectedAttribute(plan, true);
                     webClient.waitForBackgroundJavaScript(2000);
-                    webClient.waitForBackgroundJavaScript(2000);
-                    webClient.waitForBackgroundJavaScript(2000);
-                    webClient.waitForBackgroundJavaScript(2000);
                     System.out.println("Buscando cuotaInput...");
                     error="cuotaInput";
                     HtmlTextInput cuota = pageResultado.getHtmlElementById("cuotaInput");
@@ -217,8 +237,6 @@ public class Scraping {
                     cliente.setCuota(cuota!=null?cuota.getText():"0");
                 }
 
-                HtmlHiddenInput puntosCA = pageResultado.getHtmlElementById("puntosDisponibles");
-                cliente.setPuntosCA(StringUtils.isEmpty(puntosCA.getValueAttribute())?0:new Long(puntosCA.getValueAttribute()));
                 System.out.println("Buscando financiamientoDiv...");
                 error="financiamientoDiv";
                 HtmlDivision financiamientoDiv = pageResultado.getHtmlElementById("financiamientoDiv");
@@ -301,10 +319,10 @@ public class Scraping {
         }
 
     }
-    public Cliente  obtenerCliente(Cliente entity) throws IOException{
+    public Cliente  obtenerCliente(Cliente entity,boolean numSearch) throws IOException{
         contador++;
         repetir = true;
-            entity = cargarDatosSmart((HtmlTextInput) elements.get(0), (HtmlTextInput) elements.get(1), (HtmlSubmitInput) elements.get(2), webClientSmart, entity);
+            entity = cargarDatosSmart((HtmlTextInput) elements.get(0), (HtmlTextInput) elements.get(1), (HtmlTextInput) elements.get(2), (HtmlSubmitInput) elements.get(3), webClientSmart, entity,numSearch);
             if((!repetir)&&entity.getNombre()!=null){
                 LOG.log(Level.INFO, "Cliente Final: {0} #: {1} ", new Object[]{entity.toString(), contador});
             }
@@ -322,7 +340,7 @@ public class Scraping {
         contador++;
         repetir = true;
         if (validarCampo(entity)) {
-            entity = cargarDatosSmart((HtmlTextInput) elements.get(0), (HtmlTextInput) elements.get(1), (HtmlSubmitInput) elements.get(2), webClientSmart, entity);
+            entity = cargarDatosSmart((HtmlTextInput) elements.get(0), (HtmlTextInput) elements.get(1), (HtmlTextInput) elements.get(2), (HtmlSubmitInput) elements.get(3), webClientSmart, entity,false);
             if((!repetir)&&entity.getNombre()!=null){
                 LOG.log(Level.INFO, "Cliente Final: {0} #: {1} ", new Object[]{entity.toString(), contador});
             }
@@ -344,11 +362,11 @@ public class Scraping {
     }
 
     private boolean validarCampo(Cliente entity) {
-        if (entity.getNumeroTelefonico().length() != 10 && entity.getCuenta() != null) {
+        if (entity.getCuenta() == null) {
             return false;
         }
         try {
-            parseLong(entity.getNumeroTelefonico());
+            parseLong(entity.getCuenta());
         } catch (NumberFormatException e) {
             return false;
         }

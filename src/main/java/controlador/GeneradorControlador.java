@@ -23,22 +23,34 @@ public class GeneradorControlador {
     
     Scraping scrap = new Scraping();
     
-    public List<Cliente> getClientesCollection(String cadena, boolean generar, TextArea textArea){
+    public List<Cliente> getClientesCollection(String cadena, boolean generar, TextArea textArea,boolean numSearch){
         List<Cliente> clientes = new ArrayList<>();
         if(!generar){
             Long inicio = Long.parseLong(cadena);
             for(int i = 0;i<2000;i++){
-                inicio++;
-                clientes.add(new Cliente("00000000000"));
-                clientes.add(new Cliente(inicio.toString()));
+                if(numSearch){
+                    clientes.add(new Cliente("0000000000",null));
+                    clientes.add(new Cliente(inicio.toString(),null));
+                    inicio++;
+                }else{
+                    clientes.add(new Cliente("0000000000"));
+                    clientes.add(new Cliente(inicio.toString()));
+                    inicio++;
+                }
             }
             textArea.setText(textArea.getText()+"\n"+"El últmio número generado fue:\n\n\n\n\n\n\n"+inicio);
         }else{
             StringTokenizer st = new StringTokenizer(cadena,"\n");
             while (st.hasMoreTokens()) {
-                String numero = st.nextToken();
-                clientes.add(new Cliente("00000000000"));
-                clientes.add(new Cliente(numero));
+                if (numSearch) {
+                    String numero = st.nextToken();
+                    clientes.add(new Cliente("0000000000",null));
+                    clientes.add(new Cliente(numero,null));
+                }else{
+                    String numero = st.nextToken();
+                    clientes.add(new Cliente("0000000000"));
+                    clientes.add(new Cliente(numero));
+                }
             }
         }
         return clientes;

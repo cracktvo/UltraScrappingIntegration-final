@@ -10,8 +10,8 @@ public class GneracionMultiple {
     public static void main(String args[]) throws IOException {
         Scraping scraping = new Scraping();
         scraping.inicializar();
-        Cliente cliente = new Cliente("5538991983");
-        System.out.println(scraping.obtenerCliente(cliente));
+        Cliente cliente = new Cliente("92096786");
+        System.out.println(scraping.obtenerCliente(cliente,false));
         scraping.finalizar();
     }
 }

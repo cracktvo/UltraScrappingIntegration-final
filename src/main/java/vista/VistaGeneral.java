@@ -53,6 +53,9 @@ public class VistaGeneral implements Initializable {
     @FXML
     private CheckBox checkBox;
 
+    @FXML
+    private CheckBox numSearch;
+
     Scraping scraping = new Scraping();
 
     GeneradorControlador controlador = new GeneradorControlador();
@@ -68,7 +71,7 @@ public class VistaGeneral implements Initializable {
             stage = (Stage) button.getScene().getWindow();
             ProgressIndicator indicator = new ProgressIndicator();
             try {
-                clientes = controlador.getClientesCollection(cadena,checkBox.isSelected(),textArea);
+                clientes = controlador.getClientesCollection(cadena,checkBox.isSelected(),textArea,numSearch.isSelected());
                 puController = new ProgresoPUController(generarDatos(clientes), stage);
             } catch (Exception e) {
                 LOG.log(Level.SEVERE, "Log al sisact: Error: {0}", e);
@@ -116,73 +119,42 @@ public class VistaGeneral implements Initializable {
                 for (Cliente entity : clientes) {
                     Thread.sleep(1000);
                     Platform.runLater(() -> {
-                        getlNumero().setText(entity.getNumeroTelefonico());
+                        if(numSearch.isSelected()){
+                            getlNumero().setText(entity.getNumeroTelefonico());
+                        }else{
+                            getlNumero().setText(entity.getCuenta());
+                        }
                     });
-                    nuevo = scraping.obtenerCliente(entity);
-                    if ((nuevo.getNombre()==null||nuevo.getPlan()==null||nuevo.getCuenta()==null||nuevo.getPuntosCA()==null)&&!"00000000000".equals(nuevo.getNumeroTelefonico())) {
-                        nuevo = scraping.obtenerCliente(entity);
+                    nuevo = scraping.obtenerCliente(entity,numSearch.isSelected());
+                    if ((nuevo.getNombre()==null||nuevo.getPlan()==null||nuevo.getCuenta()==null||nuevo.getPuntosCA()==null)&&!"0000000000".equals(nuevo.getNumeroTelefonico())) {
+                        scraping.obtenerCliente(new Cliente("0000000000",null),numSearch.isSelected());
+                        nuevo = scraping.obtenerCliente(entity,numSearch.isSelected());
                     }
-                    if (nuevo.getNombre()!=null&&!"00000000000".equals(nuevo.getNumeroTelefonico())) {
+                    if (nuevo.getNombre()!=null&&!"0000000000".equals(nuevo.getNumeroTelefonico())) {
                         if(nuevo.getPuntosCA()==null) {
-                            nuevo = scraping.obtenerCliente(entity);
+                            scraping.obtenerCliente(new Cliente("0000000000",null),numSearch.isSelected());
+                            nuevo = scraping.obtenerCliente(entity,numSearch.isSelected());
                         }
                     }
-                    if (nuevo.getNombre()!=null&&!"00000000000".equals(nuevo.getNumeroTelefonico())) {
+                    if (nuevo.getNombre()!=null&&!"0000000000".equals(nuevo.getNumeroTelefonico())) {
                         if(nuevo.getPuntosCA()==null) {
-                            nuevo = scraping.obtenerCliente(entity);
+                            scraping.obtenerCliente(new Cliente("0000000000",null),numSearch.isSelected());
+                            nuevo = scraping.obtenerCliente(entity,numSearch.isSelected());
                         }
                     }
-                    if (nuevo.getNombre()!=null&&!"00000000000".equals(nuevo.getNumeroTelefonico())) {
+                    if (nuevo.getNombre()!=null&&!"0000000000".equals(nuevo.getNumeroTelefonico())) {
                         if(nuevo.getPuntosCA()==null) {
-                            nuevo = scraping.obtenerCliente(entity);
+                            scraping.obtenerCliente(new Cliente("0000000000",null),numSearch.isSelected());
+                            nuevo = scraping.obtenerCliente(entity,numSearch.isSelected());
                         }
                     }
-                    if (nuevo.getNombre()!=null&&!"00000000000".equals(nuevo.getNumeroTelefonico())) {
+                    if (nuevo.getNombre()!=null&&!"0000000000".equals(nuevo.getNumeroTelefonico())) {
                         if(nuevo.getPuntosCA()==null) {
-                            nuevo = scraping.obtenerCliente(entity);
+                            scraping.obtenerCliente(new Cliente("0000000000",null),numSearch.isSelected());
+                            nuevo = scraping.obtenerCliente(entity,numSearch.isSelected());
                         }
                     }
-                    if (nuevo.getNombre()!=null&&!"00000000000".equals(nuevo.getNumeroTelefonico())) {
-                        if(nuevo.getPuntosCA()==null) {
-                            nuevo = scraping.obtenerCliente(entity);
-                        }
-                    }
-                    if (nuevo.getNombre()!=null&&!"00000000000".equals(nuevo.getNumeroTelefonico())) {
-                        if(nuevo.getPuntosCA()==null) {
-                            nuevo = scraping.obtenerCliente(entity);
-                        }
-                    }
-                    if (nuevo.getNombre()!=null&&!"00000000000".equals(nuevo.getNumeroTelefonico())) {
-                        if(nuevo.getPuntosCA()==null) {
-                            nuevo = scraping.obtenerCliente(entity);
-                        }
-                    }
-                    if (nuevo.getNombre()!=null&&!"00000000000".equals(nuevo.getNumeroTelefonico())) {
-                        if(nuevo.getPuntosCA()==null) {
-                            nuevo = scraping.obtenerCliente(entity);
-                        }
-                    }
-                    if (nuevo.getNombre()!=null&&!"00000000000".equals(nuevo.getNumeroTelefonico())) {
-                        if(nuevo.getPuntosCA()==null) {
-                            nuevo = scraping.obtenerCliente(entity);
-                        }
-                    }
-                    if (nuevo.getNombre()!=null&&!"00000000000".equals(nuevo.getNumeroTelefonico())) {
-                        if(nuevo.getPuntosCA()==null) {
-                            nuevo = scraping.obtenerCliente(entity);
-                        }
-                    }
-                    if (nuevo.getNombre()!=null&&!"00000000000".equals(nuevo.getNumeroTelefonico())) {
-                        if(nuevo.getPuntosCA()==null) {
-                            nuevo = scraping.obtenerCliente(entity);
-                        }
-                    }
-                    if (nuevo.getNombre()!=null&&!"00000000000".equals(nuevo.getNumeroTelefonico())) {
-                        if(nuevo.getPuntosCA()==null) {
-                            nuevo = scraping.obtenerCliente(entity);
-                        }
-                    }
-                    if (nuevo.getCuenta() != null&&!"00000000000".equals(nuevo.getNumeroTelefonico())) {
+                    if (nuevo.getCuenta() != null&&!"0000000000".equals(nuevo.getNumeroTelefonico())) {
                         if (nuevo.getCuenta().equals(pasado.getCuenta())&&(!nuevo.getNumeroTelefonico().equals(pasado.getNumeroTelefonico()))) {
                             LOG.log(Level.INFO, "cuentaRepetida: {0}", nuevo.getCuenta());
                         }
@@ -192,7 +164,7 @@ public class VistaGeneral implements Initializable {
                             }
                         }
                     }
-                    if (nuevo.getNombre()==null&&!"00000000000".equals(nuevo.getNumeroTelefonico())) {
+                    if (nuevo.getNombre()==null&&!"0000000000".equals(nuevo.getNumeroTelefonico())&&!"0000000000".equals(nuevo.getCuenta())) {
                         noExisten.add(entity.getNumeroTelefonico()+"\n");
                     }
                     pasado = nuevo;
