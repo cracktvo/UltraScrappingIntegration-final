@@ -8,7 +8,6 @@ package vista;
 import Scraping.Scraping;
 import controlador.GeneradorControlador;
 
-import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
@@ -28,11 +27,8 @@ import javafx.scene.control.*;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Priority;
-import javafx.stage.DirectoryChooser;
 import javafx.stage.Stage;
 import modelo.entidades.Cliente;
-import org.apache.commons.lang3.StringUtils;
-import reportes.ReportesFactory;
 import uploader.Uploader;
 
 /**

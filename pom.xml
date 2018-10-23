@@ -51,10 +51,5 @@
             <artifactId>json</artifactId>
             <version>RELEASE</version>
         </dependency>
-        <dependency>
-            <groupId>net.sf.jasperreports</groupId>
-            <artifactId>jasperreports</artifactId>
-            <version>RELEASE</version>
-        </dependency>
     </dependencies>
 </project>

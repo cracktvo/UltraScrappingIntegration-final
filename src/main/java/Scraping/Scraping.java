@@ -152,11 +152,7 @@ public class Scraping {
         }
         textFieldRFC.setValueAttribute("0");
         HtmlPage pageResultado = buttonPuntos.click();
-        webClient.waitForBackgroundJavaScript(2000);
-        if(pageresultadoLimpia!=null){
-            pageResultado = pageresultadoLimpia;
-            System.out.println("**Entra en pagina limpia**");
-        }
+        webClient.waitForBackgroundJavaScript(5000);
         repetir = false;
         String error = "";
         if(pageResultado.asXml().contains("table")&&(!pageResultado.asXml().contains("encontraron"))){
@@ -279,8 +275,11 @@ public class Scraping {
             pageResultado = button.click();
             wc.waitForBackgroundJavaScript(5000);
             LOG.log(Level.INFO, "obtenerCamposSmart: {0}", (pageResultado.asXml()));
-            resultado = pageResultado.getElementById("lMenuSmart:submenu:"+m1).getElementsByTagName("a").get(0).click();
-            wc.waitForBackgroundJavaScript(6000);
+            HtmlAnchor link = (HtmlAnchor) pageResultado.getElementById("lMenuSmart:submenu:"+m1).getElementsByTagName("a").get(0);
+            resultado = link.click();
+            wc.waitForBackgroundJavaScript(1000);
+            resultado = wc.getPage(resultado.getBaseURL());
+            wc.waitForBackgroundJavaScript(1000);
             while(!((HtmlPage)resultado.getFrames().get(0).getEnclosedPage()).asXml().contains("celular")){
                 LOG.log(Level.INFO, "obtenerCamposSmart: {0}", ((HtmlPage)pageResultado.getFrames().get(0).getEnclosedPage()).asXml());
                 pageResultado = button.click();
