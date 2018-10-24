@@ -156,6 +156,7 @@ public class VistaGeneral implements Initializable {
                         }
                         else{
                             if(nuevo.getNombre()!=null) {
+                                nuevo.setMensaje("J");
                                 Uploader.insertarCliente(nuevo);
                             }
                         }
