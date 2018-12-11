@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/UltraScrappingIntegration.iml" filepath="$PROJECT_DIR$/.idea/UltraScrappingIntegration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UltraScrappingIntegration.iml" filepath="$PROJECT_DIR$/UltraScrappingIntegration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/main/main.iml" filepath="$PROJECT_DIR$/src/main/main.iml" />
     </modules>
   </component>
 </project>

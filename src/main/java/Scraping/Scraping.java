@@ -114,7 +114,7 @@ public class Scraping {
             elements.add(buttonPuntos);
             repetir = false;
             this.elements = elements;
-            if(StringUtils.isEmpty(obtenerClienteSinSubir(new Cliente("92096786")).getNombre())){
+            if(StringUtils.isEmpty(obtenerClienteSinSubir(new Cliente("4100652")).getNombre())){
                 LOG.log(Level.INFO, "obtenerCamposSmart: {0}", "Se manda a repetir por no encontrar al cliente.");
                 repetir = true;
                 webClient.close();
@@ -152,7 +152,19 @@ public class Scraping {
         }
         textFieldRFC.setValueAttribute("0");
         HtmlPage pageResultado = buttonPuntos.click();
-        webClient.waitForBackgroundJavaScript(5000);
+        webClient.waitForBackgroundJavaScript(10000);
+        pageResultado = buttonPuntos.click();
+        webClient.waitForBackgroundJavaScript(10000);
+        while ( !(pageResultado.asXml().contains("Por vencer:")&&(!pageResultado.asXml().contains("encontraron")))) {
+            LOG.log(Level.INFO,"Entro");
+            webClient.waitForBackgroundJavaScript(10000);
+            while ( !pageResultado.asXml().contains("ajaxload1")) {
+                LOG.log(Level.INFO,"Entro2" + pageResultado.asXml());
+                webClient.waitForBackgroundJavaScript(10000);
+                pageResultado = buttonPuntos.click();
+                LOG.log(Level.INFO,"Salida" + pageResultado.asXml());
+            }
+        }
         repetir = false;
         String error = "";
         if(pageResultado.asXml().contains("table")&&(!pageResultado.asXml().contains("encontraron"))){
